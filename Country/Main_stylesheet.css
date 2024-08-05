@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+    position: relative;
+    color: white;
+
+    z-index: 1000;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.931), transparent);
+    opacity: 0.1;
+    transition: opacity 1s ease-in-out;
+    z-index: 1500;
+}
+
+.main .maintitle {
+    width: 70vw;
+    font-size: 5.5rem;
+    text-shadow: 2px 2px 4px rgb(11, 9, 9), 0 0 30px #f1f5f1, 0 0 8px #000010;
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, .8); */
+    text-align: center;
+    z-index: 10000;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-fill-color: white;
+    opacity: 1;
+
+    border-radius: 100px;
+    font-family: Helvetica, Arial, Georgia;
+}
+
+.main .destitle {
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgb(11, 10, 10), 0 0 30px #09cd09, 0 0 8px #000010;
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, .8); */
+    text-align: center;
+    z-index: 10000;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-fill-color: wheat;
+    opacity: 1;
+
+}
+
+
+
+.scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(175, 251, 174);
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-watcher {
+    to {
+        scale: 1 1;
+    }
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    /* Semi-transparent background */
+    margin-top: 40px;
+    gap: 35px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.description:nth-child(2n) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: right;
+   
+}
+
+.img_info {
+    flex: 1;
+    margin-right: 20px;
+
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    opacity: 0;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+
+}
+
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ff9800;
+    text-transform: uppercase;
+
+}
+
+.text {
+    max-width: 55vw;
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information {
+    max-width: 55vw;
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+.slide-in-left {
+    animation: slide-in-left 2.5s forwards;
+}
+
+.slide-in-right {
+    animation: slide-in-right 2.5s forwards;
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .main .maintitle {
+        font-size: 3.9rem;
+    }
+
+    .main .destitle {
+        font-size: 2rem;
+    }
+
+    .main .shortinfo {
+        font-size: 1rem;
+    }
+
+    .description {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+        width: 85vw;
+    }
+
+    .description:nth-child(2n) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+        width: 85vw;
+    }
+
+    .img_info {
+        margin-bottom: 20px;
+        width: 100%;
+        /* Full width for images on small screens */
+    }
+
+    .information {
+        font-size: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        background-color: black;
+        max-width: 90vb;
+    }
+
+    .content {
+        width: 90vw;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    #image {
+        width: 100vw;
+    }
+
+    .first {
+        padding: 0 10px;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main .maintitle {
+        font-size: 3.5rem;
+        /* Adjusted for better readability */
+    }
+
+    .main .shortinfo {
+        font-size: 1.2rem;
+        /* Adjusted for better readability */
+    }
+
+    .description {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .description:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    .img_info {
+        margin-right: 20px;
+        width: 45vw;
+        /* Adjusted width for images on medium screens */
+    }
+
+    .information {
+        font-size: 1.2rem;
+        /* Adjusted font size for readability */
+    }
+
+    .content {
+        width: 80vw;
+        /* Adjusted width for better fit on medium screens */
+    }
+}
+
+
+
+
+#image {
+    width: 55vh;
+    margin-bottom: 20px;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 0;
+    transform: scale(0.8);
+
+}
+
+.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

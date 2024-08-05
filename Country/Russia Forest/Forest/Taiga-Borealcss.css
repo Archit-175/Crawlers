@@ -1,0 +1,30 @@
+.main{
+    background-image: url("https://i.im.ge/2024/07/31/VGwB8C.taiga1.jpeg");
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VGwB8C.taiga1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VG6MIp.taiga2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VG6Tn1.taiga3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VG6Xdf.taiga4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VG6rkr.taiga5.jpeg);
+    }
+    100%
+    {
+        background-image: url(images/taiga6.jpghttps://i.im.ge/2024/07/31/VG6qxG.taiga6.jpeg);
+    }
+}

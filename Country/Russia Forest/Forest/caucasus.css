@@ -1,0 +1,26 @@
+.main {
+    background-image: url(https://i.im.ge/2024/07/31/VG67qa.Caucasus1.jpeg); /* Initial background image */
+    animation: change 10s infinite ease-in-out; /* Animation to cycle through images */
+}
+
+
+@keyframes change {
+    0% {
+        background-image: url(https://i.im.ge/2024/07/31/VG67qa.Caucasus1.jpeg);
+    }
+    20% {
+        background-image: url(https://i.im.ge/2024/07/31/VG6DPJ.Caucasus2.jpeg);
+    }
+    40% {
+        background-image: url(https://i.im.ge/2024/07/31/VGwYSJ.Caucasus3.jpeg);
+    }
+    60% {
+        background-image: url(https://i.im.ge/2024/07/31/VG6UFS.Caucasus4.jpeg);
+    }
+    80% {
+        background-image: url(https://i.im.ge/2024/07/31/VGwxJa.Caucasus5.jpeg);
+    }
+    100% {
+        background-image: url(https://i.im.ge/2024/07/31/VGwcfS.Caucasus6.jpeg);
+    }
+}

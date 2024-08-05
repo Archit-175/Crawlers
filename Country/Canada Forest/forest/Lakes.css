@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/07/28/VJ53Hq.Lakes1.jpeg);
+    animation:   change 15s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/28/VJ53Hq.Lakes1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5bOp.Lakes2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5cmP.Lakes3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5gZ1.Lakes4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5JZx.Lakes5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5Rof.Lakes6.jpeg);
+    }
+}

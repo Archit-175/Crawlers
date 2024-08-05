@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Forest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/Country/header.css">
+    <link rel="stylesheet" href="/Country/slider.css">
+    <link rel="stylesheet" href="/Country/body.css">
+    <link rel="stylesheet" href="/Country/video.css">
+    <link rel="stylesheet" href="/Country/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+         .penetrate-blur{
+            padding-right: 10px;
+        }
+        .penetrate-blur h1{
+            font-size: 125px;
+        }
+        .right-info h1 {
+            font-size: 125px;
+        }
+        .slide:nth-child(3) .penetrate-blur h1{
+            font-size: 150px;
+        }
+        .slide:nth-child(3) .right-info h1 {
+            font-size: 150px;
+        }
+        .content h2{
+            font-size: 40px;
+        }
+
+        @media(max-width:1024px){
+        .penetrate-blur{
+            padding-right: 8px;
+        }
+        .penetrate-blur h1{
+            font-size: 70px;
+        }
+        .right-info h1 {
+            font-size: 70px;
+        }
+        .slide:nth-child(3) .penetrate-blur h1{
+            font-size: 100px;
+        }
+        .slide:nth-child(3) .right-info h1 {
+            font-size: 100px;
+        }
+        .content h2{
+            font-size: 35px;
+        }
+        }
+        @media(max-width:768px){
+        .penetrate-blur{
+            padding-right: 6px;
+        }
+        .penetrate-blur h1{
+            font-size: 40px;
+        }
+        .right-info h1 {
+            font-size: 40px;
+        }
+        .slide:nth-child(3) .penetrate-blur h1{
+            font-size: 70px;
+        }
+        .slide:nth-child(3) .right-info h1 {
+            font-size: 70px;
+        }
+        .content h2{
+            font-size: 25px;
+        }
+        }
+
+        .donut-chart {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: conic-gradient(
+            #4CAF50 0deg 120deg,
+            #121212 120deg 360deg
+        );
+        position: relative;
+        box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+    }
+
+    .donut-chart::before {
+        content: "33%";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="video-container">
+        <video id="intro-video" width="100%" height="100%" autoplay muted playsinline>
+            <source src="USA.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <main class="maincontent">
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo">
+            <h1>Crawler</h1>
+        </div>
+        <div class="search-box">
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Quiz</a></li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="slider">
+            <div class="slide active"><img src="https://i.im.ge/2024/08/01/VeDTyC.Olympic-National-Park-Washington.jpeg" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+                        <h1>Olympic </h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+
+                        <!-- <h3>1.Sundarban Forest</h3> -->
+                        <h2>United States of America</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        National
+                    </h1>
+                    <h3>Park</h3>
+                </div>
+            </div>
+            <div class="slide"><img src="https://i.im.ge/2024/08/01/VeDaHc.Everglades-National-Park-Florida.jpeg" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+                        <h1>Everglade</h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+                        <!-- <h3>2.Western Ghats Forests</h3> -->
+                        <h2>United States of America</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        National
+                    </h1>
+                    <h3>Park</h3>
+                </div>
+            </div>
+            <div class="slide"><img src="https://i.im.ge/2024/08/01/VeDImG.Great-Smoky-Mountains-National-Park-North-Carolina-and-Tennessee.jpeg" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+                        <h1>Great</h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+                        <!-- <h3>3.Jim Corbett National Park</h3> -->
+                        <h2>United States of America</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        Smoky
+                    </h1>
+                    <h3>Mountains</h3>
+                </div>
+            </div>
+            <div class="slide"><img src="https://i.im.ge/2024/08/01/VeDlOp.Tongass-National-Forest-Alaska.jpeg" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+                    <h1>Tongass</h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+                        <!-- <h3>4.Kaziranga National Park</h3> -->
+                        <h2>United States of America</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        National
+                    </h1>
+                    <h3>Forest</h3>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+
+        <div class="navigation">
+            <span class="prev-btn">
+                <i class='bx bx-chevron-left'></i>
+            </span>
+            <span class="next-btn">
+                <i class='bx bx-chevron-right'></i>
+            </span>
+
+            <script>
+            const locations = [
+    { name: 'Olympic National Park', lat: 47.8021, lon: -123.6044 },
+    { name: 'Everglades National Park', lat: 25.2866, lon: -80.8987 },
+    { name: 'Great Smoky Mountain', lat: 35.6118, lon: -83.4895 },
+    { name: 'Tongass National Forest (Alaska)', lat: 56.8134, lon: -133.2991 }
+];
+</script>
+                </div>
+    </section>
+    <section class="body">
+        <div class="welcome">
+            <h1>Discover Our Forests</h1>
+            <p>Explore the rich biodiversity and vital ecosystems of America's forests.</p>
+            <a href="#more-info" class="learn-more">Learn More</a>
+        </div>
+        <div id="more-info">
+            <div class="overview">
+                <h2>Overview</h2>
+    
+                <h3>Forest Cover</h3>
+                <div class="forest-cover">
+                    <div class="forest-cover-info">
+                        <p>As of 2021, the total forest cover in the United States is estimated to be approximately 310 million hectares, which accounts for about 33% of the country's total geographical area. This data is based on the latest report from the U.S. Forest Service.</p>
+                    </div>
+                    <div class="donut-chart" style="width: 220px; height: 220px; border-radius: 50%; background: conic-gradient(#4CAF50 0deg 118deg, #121212 118deg 360deg); position: relative; box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);"></div>
+                </div>
+    
+                <h3>Main Forest Types in the USA</h3>
+                <div class="forest-types">
+                    <div class="forest-types-info">
+                        <p>The United States is home to a wide variety of forest types, each with its unique ecological characteristics. Here are some of the main types:</p>
+                        <ul>
+                            <li><strong>Temperate Rainforest:</strong> Found along the Pacific Northwest, characterized by high rainfall and dense, lush vegetation.</li>
+                            <li><strong>Boreal Forest:</strong> Located in Alaska and the northern parts of the contiguous states, known for its cold-tolerant coniferous trees.</li>
+                            <li><strong>Deciduous Forest:</strong> Predominant in the eastern United States, marked by trees that shed their leaves annually.</li>
+                            <li><strong>Coniferous Forest:</strong> Found in the mountainous regions and the Pacific Northwest, known for evergreen trees like pines and firs.</li>
+                            <li><strong>Mixed Forest:</strong> A mix of deciduous and coniferous trees, common in various parts of the country.</li>
+                        </ul>
+                    </div>
+                    <div class="forest-types-map">
+                        <img src="https://i.im.ge/2024/08/01/VeDOof.USA-forest-cover.jpeg" alt="Map of the USA showing forest types">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="economic">
+                <h2>Economic Importance</h2>
+    
+                <h3>GDP Contribution</h3>
+                <p>Forests play a crucial role in the United States' environment and economy. Although their direct contribution to the GDP is relatively modest, it is estimated to be around 0.5%.</p>
+    
+                <p><strong>Here's a breakdown of the factors:</strong></p>
+    
+                <div class="economic-factors">
+                    <div class="factor">
+                        <h4>Limited Direct Contribution</h4>
+                        <div class="factor-content">
+                            <ul>
+                                <li><strong>Forestry and Logging Sector:</strong> This sector includes harvesting timber, fuelwood, and other forest products, contributing a small fraction of the GDP.</li>
+                                <li><strong>Underestimation:</strong> The true economic value of forests is often underestimated as it doesn't account for the many indirect benefits they provide.</li>
+                            </ul>
+                            <img src="https://i.im.ge/2024/08/01/VeDqa0.GDP-USA.jpeg" alt="Limited Direct Contribution of Forests">
+                        </div>
+                    </div>
+    
+                    <div class="factor">
+                        <h4>Economic Value and Indirect Benefits</h4>
+                        <div class="factor-content">
+                            <ul>
+                                <li><strong>Ecosystem Services:</strong> Forests provide essential ecosystem services like water purification, soil conservation, and flood control, benefiting agriculture and hydropower generation.</li>
+                                <li><strong>Biodiversity:</strong> Forests are home to a vast array of plant and animal life, supporting resources like medicinal plants, honey, and ecotourism.</li>
+                                <li><strong>Livelihoods:</strong> Millions of people in the USA rely on forests for non-timber forest products (NTFPs) like fruits, nuts, and medicinal herbs, providing income and sustaining traditional livelihoods.</li>
+                                <li><strong>Climate Change Mitigation:</strong> Forests absorb carbon dioxide, a greenhouse gas, helping mitigate climate change and reducing economic costs associated with climate change impacts.</li>
+                            </ul>
+                            <img src="https://i.im.ge/2024/08/01/VeDoHq.USA-forest-benifits.png" alt="Economic Value and Indirect Benefits of Forests">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="conservation">
+                <h2>Conservation Efforts</h2>
+    
+                <h3>Protected Areas</h3>
+                <p>The United States has a rich history of forest conservation, with several initiatives aimed at protecting its valuable forest ecosystems. Here's a breakdown:</p>
+    
+                <div class="conservation-efforts">
+                    <div class="effort">
+                        <h4>Legislation and Policies</h4>
+                        <div class="effort-content">
+                            <div class="content-text">
+                                <ul>
+                                    <li><strong>National Parks:</strong> Highest level of protection, with no human habitation or resource extraction allowed.</li>
+                                    <li><strong>Wilderness Areas:</strong> Focus on protecting specific species or habitats with limited human activity.</li>
+                                    <li><strong>National Forests:</strong> Areas where regulated resource use is allowed to benefit local communities.</li>
+                                    <li><strong>Forest Management Act:</strong> A set of laws regulating land use and deforestation in the USA, requiring landowners to maintain a portion of their land as forest.</li>
+                                    <li><strong>Endangered Species Act:</strong> This law establishes penalties for activities that cause significant environmental damage, including deforestation.</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://i.im.ge/2024/08/01/VeD1hm.USA-Forest-Legislation-and-Policies.jpeg" alt="Forest Legislation and Policies">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="effort">
+                        <h4>Protected Area Network</h4>
+                        <div class="effort-content">
+                            <div class="content-text">
+                                <p>The United States boasts a vast network of protected areas covering over <strong>12%</strong> of its geographical land area. This includes:</p>
+                                <ul>
+                                    <li>Over 60 National Parks</li>
+                                    <li>Over 200 Wilderness Areas</li>
+                                    <li>National Forests and Wildlife Refuges</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://i.im.ge/2024/08/01/VeDQs4.prevantive-measures-USA.jpeg" alt="Protected Area Network">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="effort">
+                        <h4>Government Initiatives</h4>
+                        <div class="effort-content">
+                            <div class="content-text">
+                                <ul>
+                                    <li><strong>Forest Legacy Program:</strong> An initiative to protect forest lands from conversion to non-forest uses.</li>
+                                    <li><strong>National Forest System:</strong> This system oversees the management of protected areas in the USA.</li>
+                                    <li><strong>Urban and Community Forestry Program:</strong> Aims to promote sustainable forest management and tree planting in urban areas.</li>
+                                    <li><strong>Collaborative Forest Landscape Restoration Program:</strong> Focuses on restoring and maintaining forest landscapes.</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://i.im.ge/2024/08/01/VeDrmP.Protected-Area-Network-USA.png" alt="Government Conservation Initiatives">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="deforestation">
+                <h2>Challenges</h2>
+    
+                <h3>Deforestation</h3>
+                <p>The United States faces a significant challenge with deforestation, despite its rich forest cover and conservation efforts. Here's a closer look at the major causes and their impacts:</p>
+    
+                <div class="deforestation-pointers">
+                    <div class="pointers">
+                        <h4>Deforestation Causes</h4>
+                        <div class="pointers-content">
+                            <div class="content-text">
+                                <ul>
+                                    <li><b>Agriculture Expansion:</b> The demand for agricultural land leads to the conversion of forest land into farms, reducing forest cover.</li>
+                                    <li><b>Logging:</b> Both legal and illegal logging activities contribute to deforestation.</li>
+                                    <li><b>Infrastructure Development:</b> Building roads, dams, and other infrastructure projects often requires clearing forests, leading to habitat loss and fragmentation.</li>
+                                    <li><b>Mining and Industrial Activities:</b> Mining for resources like coal and minerals can have a devastating impact on forests, causing deforestation and pollution.</li>
+                                    <li><b>Livestock Grazing:</b> Overgrazing by livestock can damage forest ecosystems and reduce regeneration.</li>
+                                    <li><b>Ineffective Forest Management:</b> Weak governance and inadequate enforcement of regulations can contribute to deforestation.</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://i.im.ge/2024/08/01/VeD2br.Deforestation-causes-USA.png" alt="Deforestation Causes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pointers">
+                        <h4>Impacts of Deforestation</h4>
+                        <div class="pointers-content">
+                            <div class="content-text">
+                                <ul>
+                                    <li><b>Loss of Biodiversity:</b> Forests are home to a vast array of plant and animal life. Deforestation destroys habitats, leading to species extinction and a decline in biodiversity.</li>
+                                    <li><b>Soil Erosion:</b> Forests play a crucial role in soil conservation. When trees are removed, soil becomes exposed to wind and rain, leading to erosion and loss of fertility.</li>
+                                    <li><b>Water Scarcity:</b> Forests help regulate water cycles and maintain water tables. Deforestation disrupts these processes, leading to water scarcity and impacting agricultural productivity.</li>
+                                    <li><b>Increased Climate Change Impacts:</b> Forests absorb carbon dioxide, a greenhouse gas. Deforestation contributes to climate change by releasing stored carbon dioxide into the atmosphere.</li>
+                                    <li><b>Livelihood Loss:</b> Forests provide essential resources and income for millions of people in the USA. Deforestation threatens these livelihoods and can lead to poverty.</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://i.im.ge/2024/08/01/VeDsAT.impact-of-deforestation-USA.jpeg" alt="Impacts of Deforestation">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pointers">
+                        <h4>Addressing the Challenge</h4>
+                        <div class="pointers-content">
+                            <div class="content-text">
+                                <ul>
+                                    <li><b>Sustainable Forestry Practices:</b> Implementing sustainable logging practices and promoting tree plantation programs can help meet resource needs without depleting natural forests.</li>
+                                    <li><b>Empowering Local Communities:</b> Involving local communities in forest management can create a sense of ownership and reduce deforestation.</li>
+                                    <li><b>Regulations and Enforcement:</b> Strengthening legislation and regulations on deforestation, along with effective enforcement mechanisms, is crucial.</li>
+                                    <li><b>Promoting Alternatives:</b> Encouraging the use of alternative energy sources like solar power to reduce dependence on fuelwood.</li>
+                                    <li><b>Public Awareness:</b> Educating the public about the importance of forests and the consequences of deforestation can foster support for conservation efforts.</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://i.im.ge/2024/08/01/VeDuZ1.USA-forest-conservation.jpeg" alt="Addressing the Challenge">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">World Map</a></li>
+                        <li><a href="#">Plant Tree</a></li>
+                        <li><a href="#">Your Tree</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Top Forests</h4>
+                    <ul>
+                        <li><a href="#">Amazon Rainforest</a></li>
+                        <li><a href="#">Congo Rainforest</a></li>
+                        <li><a href="#">Daintree Rainforest</a></li>
+                        <li><a href="#">Tongass National Forest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+  
+    </main>
+    
+    <script src="/Country/script.js"></script>
+    <script src="/Country/weather.js"></script>
+    <script src="/Country/video.js"></script>
+</body>
+</html>

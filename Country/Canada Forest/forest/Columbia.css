@@ -1,0 +1,24 @@
+.main {
+    background-image: url(https://i.im.ge/2024/07/31/VBvLYF.Columbia1.jpeg);
+    animation: change 15s infinite ease-in-out;
+}
+@keyframes change {
+    0% {
+        background-image: url(https://i.im.ge/2024/07/31/VBvLYF.Columbia1.jpeg);
+    }
+    20% {
+        background-image: url(https://i.im.ge/2024/07/31/VBvQFm.Columbia2.jpeg);
+    }
+    40% {
+        background-image: url(https://i.im.ge/2024/07/31/VBpekf.Columbia3.jpeg);
+    }
+    60% {
+        background-image: url(https://i.im.ge/2024/07/31/VBvTjr.Columbia4.jpeg);
+    }
+    80% {
+        background-image: url(https://i.im.ge/2024/07/31/VBpGt1.Columbia5.jpeg);
+    }
+    100% {
+        background-image: url(https://i.im.ge/2024/07/31/VBvoRW.Columbia6.jpeg);
+    }
+}

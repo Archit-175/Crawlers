@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/07/29/VndNcK.daintree1.jpeg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VndNcK.daintree1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vnd8gq.daintree2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vndg0C.daintree3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VndKE1.daintree4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vnd36Y.daintree5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VndZDP.daintree6.jpeg);
+    }
+}

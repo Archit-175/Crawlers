@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/08/01/VeXJD8.Everglade1.jpeg);
+    animation:   change 15s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeXJD8.Everglade1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeXeND.Everglade2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeX4JM.Everglade3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VelTrC.Everglade4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeXGSY.Everglade5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/Velo5q.Everglade6.jpeg);
+    }
+}

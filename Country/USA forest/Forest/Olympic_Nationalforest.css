@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/08/01/VerPm0.Olympic1.jpeg);
+    animation:   change 15s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VerPm0.Olympic1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/Verhoq.Olympic2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeriUp.Olympic3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VerLWC.Olympic4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/Ver5B1.olympic5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/Verjsf.Olympic6.jpeg);
+    }
+}

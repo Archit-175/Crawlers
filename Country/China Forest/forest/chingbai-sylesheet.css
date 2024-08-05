@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/07/31/VBkvLL.china14.jpeg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VBkvLL.china14.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VBkJxG.china16.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VBkpQc.china17.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VBkzRT.china15.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VBkk90.china18.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VBknnx.china19.jpeg);
+    }
+}

@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/07/30/V4SUVW.corozal-7469107-1920.jpeg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V4SUVW.corozal-7469107-1920.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V4SpIp.kingfisher-4695419-1920.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V4SHQq.canoe-7101195.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V42Bl6.tiger.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V42KcL.romania-2739007-1920.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V4STDX.wood-bridge-4620942-1280.jpeg);
+    }
+}

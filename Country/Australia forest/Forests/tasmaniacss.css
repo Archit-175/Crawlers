@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/07/29/VnqGR4.tasmaniaforest1.jpeg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VnqGR4.tasmaniaforest1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VnD4Ap.tasmaniaforest2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vnq4FY.tasmaniaforest3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VnDvGC.Tasmaniaforest4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VnqJzM.tasmaniaforest5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VnsT3p.tasmaniaforest6.jpeg);
+    }
+}

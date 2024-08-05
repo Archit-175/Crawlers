@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/08/01/VeuDCa.SmokyMountain1.jpeg);
+    animation:   change 15s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeuDCa.SmokyMountain1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeuNC8.SmokyMountain2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeusGG.SmokyMountain3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/Veu77x.SmokyMountain4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeuIpJ.SmokyMountain5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeuCVD.SmokyMountain6.jpeg);
+    }
+}

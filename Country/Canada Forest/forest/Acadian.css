@@ -1,0 +1,24 @@
+.main {
+    background-image: url(https://i.im.ge/2024/07/28/VJ5rTm.Acadian.webp);
+    animation: change 15s infinite ease-in-out;
+}
+@keyframes change {
+    0% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5rTm.Acadian.webp);
+    }
+    20% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5uUr.Acadian2.webp);
+    }
+    40% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5oj1.Acadian3.jpeg);
+    }
+    60% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5TFP.Acadian4.jpeg);
+    }
+    80% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5XRf.Acadian5.jpeg);
+    }
+    100% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5Zbr.Acadian6.jpeg);
+    }
+}

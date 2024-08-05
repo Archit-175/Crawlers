@@ -1,0 +1,30 @@
+.main{
+    background-image: url(images/gondwana1.jpg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VnqXfS.gondwana1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VndHVW.gondwana2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vndngc.gondwana3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vndvr0.gondwana4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VndJ5T.gondwana5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VndGDG.gondwana6.jpeg);
+    }
+}

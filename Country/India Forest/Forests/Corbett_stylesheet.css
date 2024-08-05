@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/07/30/V4SRdh.fall-7605210-1920.jpeg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V4SRdh.fall-7605210-1920.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V4d7TF.pexels-arktravelogue-4620429.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V4dmR4.pexels-phreewil-535431.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V4d9FY.pexels-megapixel-1481581.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VBJZrM.pexels-dustin-cox-43327-159884.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/30/V42k7x.pexels-wendywei-2758744.jpeg);
+    }
+}

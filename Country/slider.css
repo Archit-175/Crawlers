@@ -1,0 +1,309 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.slide.active img{
+    opacity: 1;
+}
+
+.slide .left-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: 0s;
+}
+
+.slide.active .left-info {
+    transform: translateX(0);
+    z-index: 1;
+    transition: .5s ease;
+}
+
+.left-info .penetrate-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+
+    /* Standard syntax */
+    mask: linear-gradient(#000 0 0),
+          linear-gradient(#000 0 0);
+    mask-clip: text, padding-box;
+    mask-composite: exclude;
+
+    /* WebKit syntax */
+    -webkit-mask: linear-gradient(#000 0 0),
+                  linear-gradient(#000 0 0);
+    -webkit-mask-clip: text, padding-box;
+    -webkit-mask-composite: xor;
+
+    /* Firefox syntax */
+    -moz-mask: linear-gradient(#000 0 0),
+               linear-gradient(#000 0 0);
+    -moz-mask-clip: text, padding-box;
+    -moz-mask-composite: subtract;
+}
+
+
+.penetrate-blur h1{
+    font-size: 150px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+}
+
+.left-info .content{
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    color: #fff;
+}
+/* weather */
+.content .weather-info {
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content h3{
+    font-size: 20px;
+}
+
+.content h2{
+    font-size: 50px;
+    color: orangered;
+    margin: 10px 0 15px;
+}
+
+.content .bttn{
+    display: inline-block;
+    padding: 13px 28px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600px;
+    transition: .5s;
+}
+
+.content .bttn:hover{
+    background: transparent;
+    color: #fff;
+    border-color: transparent
+}
+
+.slide .right-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0s;
+} 
+
+.slide.active .right-info{
+    transform: translateX(0);
+    z-index: 1;
+    transition: .5s ease;
+}
+
+.right-info h1 {
+    font-size: 150px;
+    color: #fdfdfd;
+    text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0#c9c9c9,
+    0 3px 0#bbb,
+    0 4px 0#b9b9b9,
+    0 5px 0#aaa,
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0  5px rgba(0, 0, 0, 1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0,0,0,.15);
+    }
+.right-info h3{
+    position: absolute;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(150%);
+    margin-left: 13px;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    z-index:99;
+}
+
+.navigation span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin-left: 25px;
+    transition: 0.5s;
+}
+
+.navigation span:nth-child(1){
+    background: transparent
+}
+.navigation span:nth-child(1):hover{
+    background: #fff
+}
+.navigation span i{
+    font-size: 45px;
+    color: #444;
+    transition: 0.5s;
+}
+.navigation span:nth-child(1) i{
+    color: #ffffff;
+}
+.navigation span:nth-child(1):hover i{
+    color: #444;
+}
+.navigation span:nth-child(2){
+    background: transparent
+}
+.navigation span:nth-child(2):hover{
+    background: #fff
+}
+.navigation span i{
+    font-size: 45px;
+    color: #444;
+    transition: 0.5s;
+}
+.navigation span:nth-child(2) i{
+    color: #ffffff;
+}
+.navigation span:nth-child(2):hover i{
+    color: #444;
+}
+
+@media(max-width:1024px){
+    .penetrate-blur h1{
+        font-size: 86px;
+    }
+    .content h3{
+        font-size: 20px;
+    }
+    
+    .content h2{
+        font-size: 35px;
+    }
+
+    .content .bttn{
+        padding: 8px 20px;
+    }
+    .right-info h1 {
+        font-size: 86px;
+
+        }
+    .right-info h3{
+
+        font-size: 50px;
+    }
+    .left-info .penetrate-blur{
+        padding-right: 5px;
+    }
+}
+
+@media(max-width:700px){
+    .penetrate-blur h1{
+        font-size: 46px;
+    }
+    .content h3{
+        font-size: 15px;
+    }
+    
+    .content h2{
+        font-size: 28px;
+    }
+    .content .weather-info {
+        width: 150px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .content .bttn{
+        padding: 8px 20px;
+    }
+    .right-info h1 {
+        font-size: 46px;
+
+        }
+    .right-info h3{
+
+        font-size: 40px;
+    }
+
+    .left-info .penetrate-blur{
+        padding-right: 3px;
+    }
+}
+
+@media(max-height:500px){
+
+    .content h3{
+        font-size: 15px;
+    }
+    
+    .content h2{
+        font-size: 25px;
+        margin: 6px;
+    }
+    .content .weather-info {
+        width: 123px;
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    .content .bttn{
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}

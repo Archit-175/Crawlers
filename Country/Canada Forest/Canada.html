@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Forest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/Country/header.css">
+    <link rel="stylesheet" href="/Country/slider.css">
+    <link rel="stylesheet" href="/Country/body.css">
+    <link rel="stylesheet" href="/Country/video.css">
+    <link rel="stylesheet" href="/Country/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+
+        .slide:nth-child(1) .penetrate-blur {
+            padding-right: 10px;
+        }
+
+        .slide:nth-child(1) .penetrate-blur h1{
+            font-size: 110px;
+        }
+        .slide:nth-child(1) .right-info h1 {
+            font-size: 110px;
+        }
+        .slide:nth-child(2) .penetrate-blur h1{
+            font-size: 100px;
+        }
+        .slide:nth-child(2) .right-info h1 {
+            font-size: 100px;
+        }
+        .slide:nth-child(3) .penetrate-blur h1{
+            font-size: 125px;
+        }
+        .slide:nth-child(3) .right-info h1 {
+            font-size: 125px;
+        }
+        .slide:nth-child(4) .penetrate-blur h1{
+            font-size: 105px;
+        }
+        .slide:nth-child(4) .right-info h1 {
+            font-size: 105px;
+        }
+        .slide:nth-child(5) .penetrate-blur h1{
+            font-size: 120px;
+        }
+        .slide:nth-child(5) .right-info h1 {
+            font-size: 120px;
+        }
+        @media(max-width:1024px){
+            .slide:nth-child(1) .penetrate-blur {
+            padding-right: 5px;
+        }
+
+        .slide:nth-child(1) .penetrate-blur h1{
+            font-size: 75px;
+        }
+        .slide:nth-child(1) .right-info h1 {
+            font-size: 75px;
+        }
+        .slide:nth-child(2) .penetrate-blur h1{
+            font-size: 70px;
+        }
+        .slide:nth-child(2) .right-info h1 {
+            font-size: 70px;
+        }
+        .slide:nth-child(3) .penetrate-blur h1{
+            font-size: 85px;
+        }
+        .slide:nth-child(3) .right-info h1 {
+            font-size: 85px;
+        }
+        .slide:nth-child(4) .penetrate-blur h1{
+            font-size: 75px;
+        }
+        .slide:nth-child(4) .right-info h1 {
+            font-size: 75px;
+        }
+        .slide:nth-child(5) .penetrate-blur h1{
+            font-size: 80px;
+        }
+        .slide:nth-child(5) .right-info h1 {
+            font-size: 80px;
+        }
+}
+        .donut-chart {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: conic-gradient(
+            #4CAF50 0deg 137deg,
+            #121212 137deg 360deg
+        );
+        position: relative;
+        box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+    }
+
+    .donut-chart::before {
+        content: "38%";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="video-container">
+        <video id="intro-video" width="100%" height="100%" autoplay muted playsinline>
+            <source src="Canda.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <main class="maincontent">
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo">
+            <h1>Crawler</h1>
+        </div>
+        <div class="search-box">
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <ul>
+            <li><a href="../../home.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../../../Quiz/index.html">Quiz</a></li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="slider">
+            <div class="slide active"><img src="https://i.im.ge/2024/08/01/VeDCih.Great-Lakes-St-Lawrence-Forest-Canada.jpeg" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+                        <h1>Lakes-St</h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+
+                        <!-- <h3>Great Lakes-St. Lawrence Forest</h3> -->
+                        <h2>Canada</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        Lawrence
+                    </h1>
+                    <h3>Forest</h3>
+                </div>
+            </div>
+            <div class="slide"><img src="https://i.im.ge/2024/08/01/VeDjaz.Boreal-forest-canada.jpeg" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+                        <h1>Boreal</h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+                        <!-- <h3>Boreal evergreen forest</h3> -->
+                        <h2>Canada</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        Evergreen
+                    </h1>
+                    <h3>Forest</h3>
+                </div>
+            </div>
+            <div class="slide"><img src="https://i.im.ge/2024/08/01/VeDihJ.Acadian-Forest-canada.jpeg" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+                        <h1>Acadian</h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+                        <!-- <h3>Acadian Forest</h3> -->
+                        <h2>Canada</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        Forest
+                    </h1>
+                    
+                </div>
+            </div>
+            <div class="slide"><img src="https://i.im.ge/2024/08/01/VeDwpF.Columbia-Forest-Canada.jpeg" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+
+
+                        <h1>Columbia</h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+                        <!-- <h3>Columbia Forest</h3> -->
+                        <h2>Canada</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        Forest
+                    </h1>
+                </div>
+            </div>
+            <div class="slide"><img src="https://i.im.ge/2024/08/01/VeDLZx.Montane-Forest-Canada.webp" alt="">
+                <div class="left-info">
+                    <div class="penetrate-blur">
+                        <h1>Montane</h1>
+                    </div>
+                    <div class="content">
+                        <div class="weather-info"></div>
+                        <!-- <h3>Motane Forest</h3> -->
+                        <h2>Canada</h2>
+                        <a href="#" class="bttn">More Details</a>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <h1>
+                        Forest
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <span class="prev-btn">
+                <i class='bx bx-chevron-left'></i>
+            </span>
+            <span class="next-btn">
+                <i class='bx bx-chevron-right'></i>
+            </span>
+
+            <script>
+                const locations = [
+                    { name: 'Great Lakes-St. Lawrence Forest', lat: 45.0000, lon: -75.0000 },
+                    { name: 'Boreal Forest Canada', lat: 56.1304, lon: -106.3468 }, 
+                    { name: 'Acadian Forest', lat: 46.4984, lon: -65.5540 },
+                    { name: 'Columbia Forest', lat: 52.5000, lon: -117.5000 },
+                    { name: 'Montane Forest Canada', lat: 51.1784, lon: -115.5708 }
+                ];
+            </script>
+            
+            </div>
+    </section>
+    <section class="body">
+        <div class="welcome">
+            <h1>Discover Our Forests</h1>
+            <p>Explore the rich biodiversity and vital ecosystems of our nation's forests.</p>
+            <a href="#more-info" class="learn-more">Learn More</a>
+        </div>
+        <div id="more-info">
+            <div class="overview">
+                <h2>Overview</h2>
+    
+                <h3>Forest Cover</h3>
+                <div class="forest-cover">
+                    <div class="forest-cover-info">
+                        <p>As of 2021, the total forest cover in Canada is estimated to be <b>347</b> million hectares,
+                            which accounts for 38% of the country's total geographical area. This
+                            information is based on the latest report by the Canadian Forest Service.</p>
+                    </div>
+                    <div class="donut-chart"></div>
+                </div>
+    
+                <h3>Main Forest Types in Canada</h3>
+                <div class="forest-types">
+                    <div class="forest-types-info">
+                        <p>Canada boasts a diverse range of forest types, each with its unique ecological
+                            characteristics. Here are some of the main types:</p>
+                        <ul>
+                            <li><strong>Boreal Forests:</strong> These dense forests are found across the northern regions of Canada. They are characterized by coniferous trees such as spruce, fir, and pine.</li>
+                            <li><strong>Great Lakes-St. Lawrence Forests:</strong> These forests are found in the Great Lakes and St. Lawrence River regions and contain a mix of deciduous and coniferous trees, including maple, birch, and hemlock.</li>
+                            <li><strong>Acadian Forests:</strong> Found in the Maritime provinces, these forests have a mix of hardwood and softwood species like red spruce, balsam fir, and yellow birch.</li>
+                            <li><strong>Coastal Rainforests:</strong> Located along the Pacific coast, these forests are known for their lush vegetation and tall trees such as Douglas fir, western red cedar, and Sitka spruce.</li>
+                            <li><strong>Montane Forests:</strong> Found in the mountainous regions of British Columbia and Alberta, these forests are dominated by conifers like lodgepole pine and Engelmann spruce.</li>
+                        </ul>
+                    </div>
+                    <div class="forest-types-map">
+                        <img src="https://i.im.ge/2024/08/01/VeDPw9.Forest-Cover-canada.jpeg" alt="Map of Canada showing forest types">
+                    </div>
+                </div>
+                <div class="economic">
+                    <h2>Economic Importance</h2>
+    
+                    <h3>GDP Contribution</h3>
+                    <p>While forests play a crucial role in Canada's environment and ecology, their direct
+                        contribution to the GDP (Gross Domestic Product) is relatively low, estimated to be around
+                        2%.</p>
+    
+                    <p><strong>Here's a breakdown of the factors:</strong></p>
+    
+                    <div class="economic-factors">
+                        <div class="factor">
+                            <h4>Limited Direct Contribution</h4>
+                            <div class="factor-content">
+                                <ul>
+                                    <li><strong>Forestry and Logging Sector:</strong> This sector, which includes
+                                        harvesting timber, fuelwood, and other forest products, contributes a small
+                                        fraction of the GDP.</li>
+                                    <li><strong>Underestimation:</strong> The true economic value of forests is
+                                        often underestimated as it doesn't account for the many indirect benefits
+                                        they provide.</li>
+                                </ul>
+                                <img src="https://i.im.ge/2024/08/01/VeDEcM.Gdp-Canada.png" alt="Limited Direct Contribution of Forests">
+                            </div>
+                        </div>
+    
+                        <div class="factor">
+                            <h4>Economic Value and Indirect Benefits</h4>
+                            <div class="factor-content">
+                                <ul>
+                                    <li><strong>Ecosystem Services:</strong> Forests provide essential ecosystem
+                                        services like water purification, soil conservation, and flood control.
+                                        These services indirectly benefit agriculture, hydropower generation, and
+                                        other sectors.</li>
+                                    <li><strong>Biodiversity:</strong> Forests are home to a vast array of plant and
+                                        animal life, which supports essential resources like medicinal plants,
+                                        honey, and ecotourism.</li>
+                                    <li><strong>Livelihoods:</strong> Many people in Canada rely on forests
+                                        for non-timber forest products (NTFPs) like fruits, nuts, and medicinal
+                                        herbs. This provides income and sustains traditional livelihoods.</li>
+                                    <li><strong>Climate Change Mitigation:</strong> Forests absorb carbon dioxide, a
+                                        greenhouse gas, and help mitigate climate change. This reduces the economic
+                                        costs associated with climate change impacts like droughts and floods.</li>
+                                </ul>
+                                <img src="https://i.im.ge/2024/08/01/VeDN1K.Economic-Value-and-Indirect-Benefits-of-Forests-Canada.webp" alt="Economic Value and Indirect Benefits of Forests">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conservation">
+                    <h2>Conservation Efforts</h2>
+                    
+                    <h3>Protected Areas</h3>
+                    <p>Canada has a rich history of forest conservation, and several initiatives aim to protect its valuable forest ecosystems. Here's a breakdown:</p>
+                    
+                    <div class="conservation-efforts">
+                        <div class="effort">
+                            <h4>Legislation and Policies</h4>
+                            <div class="effort-content">
+                                <div class="content-text">
+                                    <ul>
+                                        <li><strong>National Parks:</strong> Highest level of protection, with no human habitation or resource extraction allowed.</li>
+                                        <li><strong>Wildlife Sanctuaries:</strong> Focus on protecting specific species or habitats with limited human activity.</li>
+                                        <li><strong>Conservation Reserves:</strong> Areas with valuable flora and fauna, where regulated resource use might be allowed.</li>
+                                        <li><strong>Forest Conservation Act:</strong> Regulates the diversion of forest land for non-forestry purposes, requiring compensatory afforestation (planting trees elsewhere).</li>
+                                        <li><strong>The Wildlife Act:</strong> This act forms the legislative framework for wildlife protection and establishes three categories of protected areas.</li>
+                                    </ul>
+                                </div>
+                                <div class="content-image">
+                                    <img src="https://i.im.ge/2024/08/01/VeDtKX.Forest-Legislation-and-Policies-Canada.jpeg" alt="Forest Legislation and Policies">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="effort">
+                            <h4>Protected Area Network</h4>
+                            <div class="effort-content">
+                                <div class="content-text">
+                                    <p>Canada boasts a vast network of protected areas covering over <strong>10%</strong> of its geographical land area. This includes:</p>
+                                    <ul>
+                                        <li>Over 40 National Parks</li>
+                                        <li>Over 100 Wildlife Sanctuaries</li>
+                                        <li>Community Reserves and Conservation Reserves</li>
+                                    </ul>
+                                </div>
+                                <div class="content-image">
+                                    <img src="https://i.im.ge/2024/08/01/VeD5GS.Protected-Area-Network-Canada.jpeg" alt="Protected Area Network">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="effort">
+                            <h4>Government Initiatives</h4>
+                            <div class="effort-content">
+                                <div class="content-text">
+                                    <ul>
+                                        <li><strong>National Forest Strategy:</strong> Launched in 2008, this strategy aims to increase forest cover and improve forest quality.</li>
+                                        <li><strong>Community Forestry:</strong> This program involves local communities in forest management, fostering a sense of ownership and reducing deforestation.</li>
+                                        <li><strong>Species at Risk Act (SARA):</strong> This program focuses on the conservation of endangered species in Canadian forests.</li>
+                                        <li><strong>Afforestation Initiatives:</strong> Promotes large-scale afforestation activities across the country.</li>
+                                    </ul>
+                                </div>
+                                <div class="content-image">
+                                    <img src="https://i.im.ge/2024/08/01/VeDAX8.Government-Conservation-Initiatives-Canada.jpeg" alt="Government Conservation Initiatives">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deforestation">
+                    <h2>Challenges</h2>
+    
+                    <h3>Deforestation</h3>
+                    <p>Canada faces a significant challenge with deforestation, despite its rich forest cover and
+                        conservation efforts. Here's a closer look at the major causes and their impacts:</p>
+    
+                    <div class="deforestation-pointers">
+                        <div class="pointers">
+                            <h4>Deforestation Causes</h4>
+                            <div class="pointers-content">
+                                <div class="content-text">
+                                    <ul>
+                                        <li><b>Agriculture Expansion:</b> As Canada's population grows, the demand for
+                                            agricultural land increases. This
+                                            leads to the conversion of forest land into farms, reducing forest cover.
+                                        </li>
+                                        <li><b>Fuelwood Needs:</b> A portion of Canada's rural population depends
+                                            on firewood for cooking and
+                                            heating. Unsustainable firewood collection can lead to deforestation.</li>
+                                        <li><b>Infrastructure Development:</b> Building roads, dams, and other
+                                            infrastructure projects often requires
+                                            clearing forests, leading to habitat loss and fragmentation.</li>
+                                        <li><b>Mining and Industrial Activities:</b> Mining for resources like coal and
+                                            iron ore can have a devastating
+                                            impact on forests, causing deforestation and pollution.</li>
+                                        <li><b>Livestock Grazing:</b> Overgrazing by livestock can damage forest
+                                            ecosystems and reduce regeneration.</li>
+                                        <li><b>Ineffective Forest Management:</b> Weak governance and inadequate
+                                            enforcement of regulations can
+                                            contribute to deforestation.</li>
+                                    </ul>
+                                </div>
+                                <div class="content-image">
+                                    <img src="https://i.im.ge/2024/08/01/VeDmA6.cause-of-deforestation-canada.png" alt="Deforestation Causes">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pointers">
+                            <h4>Impacts of Deforestation</h4>
+                            <div class="pointers-content">
+                                <div class="content-text">
+                                    <ul>
+                                        <li><b>Loss of Biodiversity:</b> Forests are home to a vast array of plant and
+                                            animal life. Deforestation
+                                            destroys habitats, leading to species extinction and a decline in
+                                            biodiversity.</li>
+                                        <li><b>Soil Erosion:</b> Forests play a crucial role in soil conservation. When
+                                            trees are removed, soil
+                                            becomes exposed to wind and rain, leading to erosion and loss of fertility.
+                                        </li>
+                                        <li><b>Water Scarcity:</b> Forests help regulate water cycles and maintain water
+                                            tables. Deforestation
+                                            disrupts these processes, leading to water scarcity and impacting
+                                            agricultural productivity.
+                                        </li>
+                                        <li><b>Increased Climate Change Impacts:</b> Forests absorb carbon dioxide, a
+                                            greenhouse gas. Deforestation
+                                            contributes to climate change by releasing stored carbon dioxide into the
+                                            atmosphere.</li>
+                                        <li><b>Livelihood Loss:</b> Forests provide essential resources and income for
+                                            many people in Canada.
+                                            Deforestation threatens these livelihoods and can lead to poverty.</li>
+                                    </ul>
+                                </div>
+                                <div class="content-image">
+                                    <img src="https://i.im.ge/2024/08/01/VeD0by.impact-of-deforestation.jpeg" alt="Impacts of Deforestation">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pointers">
+                            <h4>Addressing the Challenge</h4>
+                            <div class="pointers-content">
+                                <div class="content-text">
+                                    <ul>
+                                        <li><b>Sustainable Forestry Practices:</b> Implementing sustainable logging
+                                            practices and promoting tree
+                                            plantation programs can help meet resource needs without depleting natural
+                                            forests.</li>
+                                        <li><b>Empowering Local Communities:</b> Involving local communities in forest
+                                            management can create a
+                                            sense of ownership and reduce deforestation.</li>
+                                        <li><b>Regulations and Enforcement:</b> Strengthening legislation and
+                                            regulations on deforestation, along
+                                            with effective enforcement mechanisms, is crucial.</li>
+                                        <li><b>Promoting Alternatives:</b> Encouraging the use of alternative energy
+                                            sources like solar power to
+                                            reduce dependence on fuelwood.</li>
+                                        <li><b>Public Awareness:</b> Educating the public about the importance of
+                                            forests and the consequences of
+                                            deforestation can foster support for conservation efforts.</li>
+                                    </ul>
+                                </div>
+                                <div class="content-image">
+                                    <img src="https://i.im.ge/2024/08/01/VeDhXa.Preventive-measures-canada.webp" alt="Addressing the Challenge">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>       
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">World Map</a></li>
+                        <li><a href="#">Plant Tree</a></li>
+                        <li><a href="#">Your Tree</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Top Forests</h4>
+                    <ul>
+                        <li><a href="#">Amazon Rainforest</a></li>
+                        <li><a href="#">Congo Rainforest</a></li>
+                        <li><a href="#">Daintree Rainforest</a></li>
+                        <li><a href="#">Tongass National Forest</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    </main>
+    
+    <script src="/Country/script.js"></script>
+    <script src="/Country/weather.js"></script>
+    <script src="/Country/video.js"></script>
+</body>
+</html>

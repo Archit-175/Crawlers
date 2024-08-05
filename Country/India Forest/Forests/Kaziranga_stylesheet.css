@@ -1,0 +1,30 @@
+.main{
+    background-image: url(images/pexels-valiphotos-589802.jpg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(images/pexels-bru-no-1461027.jpg);
+    }
+    20%
+    {
+        background-image: url(images/pexels-saymon-sami-202123-725100.jpg);
+    }
+    40%
+    {
+        background-image: url(images/pexels-janventer-6477338.jpg);
+    }
+    60%
+    {
+        background-image: url(images/pexels-lucaspezeta-2423412.jpg);
+    }
+    80%
+    {
+        background-image: url(images/pexels-quang-nguyen-vinh-222549-14035695.jpg);
+    }
+    100%
+    {
+        background-image: url(images/pexels-valiphotos-589802.jpg);
+    }
+}

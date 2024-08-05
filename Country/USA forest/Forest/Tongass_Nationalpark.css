@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/08/01/VeFJR4.Tongass1.jpeg);
+    animation:   change 15s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeFJR4.Tongass1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeOozm.Tongass2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeFBUq.Tongass3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeOQs1.Tongass4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeOTtf.Tongass5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/08/01/VeOlOr.Tongass6.jpeg);
+    }
+}

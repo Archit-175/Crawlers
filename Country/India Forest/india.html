@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Forest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/loading.css">
+    <link rel="stylesheet" href="/Country/header.css">
+    <link rel="stylesheet" href="/Country/slider.css">
+    <link rel="stylesheet" href="/Country/body.css">
+    <link rel="stylesheet" href="/Country/video.css">
+    <link rel="stylesheet" href="/Country/footer.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .slide:nth-child(1) .penetrate-blur {
+            padding-right: 10px;
+        }
+
+        .slide:nth-child(2) .penetrate-blur {
+            padding-right: 10px;
+        }
+        .slide:nth-child(5) .penetrate-blur {
+            padding-right: 10px;
+        }
+
+        @media(max-width:700px) {
+            .slide:nth-child(1) .penetrate-blur {
+                padding-right: 3px;
+            }
+
+            .slide:nth-child(2) .penetrate-blur {
+                padding-right: 3px;
+            }
+            .slide:nth-child(5) .penetrate-blur {
+                padding-right: 3px;
+            }
+        }
+        @media(max-width:1024px) {
+            .slide:nth-child(1) .penetrate-blur {
+                padding-right: 5px;
+            }
+
+            .slide:nth-child(2) .penetrate-blur {
+                padding-right: 5px;
+            }
+            .slide:nth-child(5) .penetrate-blur {
+                padding-right: 5px;
+            }
+        }
+
+        .donut-chart {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: conic-gradient(#4CAF50 0deg 78deg,
+                    #121212 78deg 360deg);
+            position: relative;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+        }
+
+        .donut-chart::before {
+            content: "21.71%";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading">
+        <h1>Please wait 👉👈  </h1>
+    </div>
+    <div id="video-container">
+        <video id="intro-video" width="100%" height="100%" autoplay muted playsinline>
+            <source src="India.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <main class="maincontent">
+        <header>
+            <input type="checkbox" name="" id="chk1">
+            <div class="logo">
+                <h1>Crawler</h1>
+            </div>
+            <div class="search-box">
+                <form>
+                    <input type="text" name="search" id="srch" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="../../Quiz/index.html">Quiz</a></li>
+            </ul>
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="slider">
+                <div class="slide active">
+                    <a href="https://im.ge/i/sundarban.VJ0etq"><img src="https://i.im.ge/2024/07/28/VJ0etq.sundarban.jpeg" alt="sundarban" border="0"></a>
+                    <div class="left-info">
+                        <div class="penetrate-blur">
+                            <h1>Sunda</h1>
+                        </div>
+                        <div class="content">
+                            <div class="weather-info"></div>
+
+                            <!-- <h3>1.Sundarban Forest</h3> -->
+                            <h2>West Bengal,India</h2>
+                            <a href="/Country/India Forest/Forests/sundarbun.html" class="bttn">More Details</a>
+                        </div>
+                    </div>
+                    <div class="right-info">
+                        <h1>
+                            rban
+                        </h1>
+                        <h3>Forest</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <a href="https://im.ge/i/Deacon.VJllFG"><img src="https://i.im.ge/2024/07/27/VJllFG.Deacon.jpeg" alt="Deacon" border="0"></a>
+                    <div class="left-info">
+                        <div class="penetrate-blur">
+                            <h1>Dea</h1>
+                        </div>
+                        <div class="content">
+                            <div class="weather-info"></div>
+                            <!-- <h3>2.Deacon Forests</h3> -->
+                            <h2>India</h2>
+                            <a href="/Country/India Forest/Forests/Deccan-forest.html" class="bttn">More Details</a>
+                        </div>
+                    </div>
+                    <div class="right-info">
+                        <h1>
+                            con
+                        </h1>
+                        <h3>Forest</h3>
+                    </div>
+                </div>
+                <div class="slide"><a href="https://im.ge/i/jimcorbet.VJ04n4"><img src="https://i.im.ge/2024/07/28/VJ04n4.jimcorbet.png" alt="jimcorbet" border="0"></a>
+                    <div class="left-info">
+                        <div class="penetrate-blur">
+                            <h1>Jim</h1>
+                        </div>
+                        <div class="content">
+                            <div class="weather-info"></div>
+                            <!-- <h3>3.Jim Corbett National Park</h3> -->
+                            <h2>Uttarakhand,India</h2>
+                            <a href="/Country/India Forest/Forests/Corbett.html" class="bttn">More Details</a>
+                        </div>
+                    </div>
+                    <div class="right-info">
+                        <h1>
+                            Corbett
+                        </h1>
+                        <h3>National Park</h3>
+                    </div>
+                </div>
+                <div class="slide"><a href="https://im.ge/i/Kaziranga.VJ0Rn6"><img src="https://i.im.ge/2024/07/28/VJ0Rn6.Kaziranga.jpeg" alt="Kaziranga" border="0"></a>
+                    <div class="left-info">
+                        <div class="penetrate-blur">
+
+
+                            <h1>Kazir</h1>
+                        </div>
+                        <div class="content">
+                            <div class="weather-info"></div>
+                            <!-- <h3>4.Kaziranga National Park</h3> -->
+                            <h2>Assam,India</h2>
+                            <a href="/Country/India Forest/Forests/Kaziranga.html" class="bttn">More Details</a>
+                        </div>
+                    </div>
+                    <div class="right-info">
+                        <h1>
+                            anga
+                        </h1>
+                        <h3>National Park</h3>
+                    </div>
+                </div>
+                <div class="slide"><a href="https://im.ge/i/Athirappilly-and-Vazhachal-Waterfalls-Thrissur-Kerala-Tourism-1.VnxSYF"><img src="https://i.im.ge/2024/07/29/VnxSYF.Athirappilly-and-Vazhachal-Waterfalls-Thrissur-Kerala-Tourism-1.jpeg" alt="Athirappilly and Vazhachal Waterfalls Thrissur Kerala Tourism 1" border="0"></a>
+                    <div class="left-info">
+                        <div class="penetrate-blur">
+                            <h1>Western</h1>
+                        </div>
+                        <div class="content">
+                            <div class="weather-info"></div>
+                            <!-- <h3>5.Western ghat</h3> -->
+                            <h2>Karnataka,India</h2>
+                            <a href="/Country/India Forest/Forests/Wester_Ghats.html" class="bttn">More Details</a>
+                        </div>
+                    </div>
+                    <div class="right-info">
+                        <h1>
+                            Ghats
+                        </h1>
+                        <h3>Forest</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <span class="prev-btn">
+                    <i class='bx bx-chevron-left'></i>
+                </span>
+                <span class="next-btn">
+                    <i class='bx bx-chevron-right'></i>
+                </span>
+
+                <script>
+                    const locations = [
+                        { name: 'Sundarban', lat: 21.9497, lon: 89.1833 },
+                        { name: 'Deacon Forest', lat: 10.5000, lon: 76.5000 },
+                        { name: 'Jim Corbett National Park', lat: 29.5300, lon: 78.7747 },
+                        { name: 'Kaziranga National Park', lat: 26.5843, lon: 93.1711 },
+                        { name: 'Western Ghats', lat: 10.5000, lon: 76.5000 }
+                    ];</script>
+            </div>
+        </section>
+        <section class="body">
+            <div class="welcome">
+                <h1>Discover Our Forests</h1>
+                <p>Explore the rich biodiversity and vital ecosystems of our nation's forests.</p>
+                <a href="#more-info" class="learn-more">Learn More</a>
+            </div>
+            <div id="more-info">
+                <div class="overview">
+                    <h2>Overview</h2>
+
+                    <h3>Forest Cover</h3>
+                    <div class="forest-cover">
+                        <div class="forest-cover-info">
+                            <p>As of 2021, the total forest cover in India is estimated to be 80.9 million hectares,
+                                which accounts for 21.71 percent of the country's total geographical area. This
+                                information is based on the latest India State of Forest Report (ISFR) published in
+                                2022.</p>
+                        </div>
+                        <div class="donut-chart"></div>
+                    </div>
+
+                    <h3>Main Forest Types in India</h3>
+                    <div class="forest-types">
+                        <div class="forest-types-info">
+                            <p>India boasts a diverse range of forest types, each with its unique ecological
+                                characteristics. Here are some of the main types:</p>
+                            <ul>
+                                <li><strong>Tropical Evergreen Forests:</strong> These dense forests are found in the
+                                    Western Ghats, Andaman and Nicobar Islands, and parts of Northeast India. They are
+                                    characterized by tall trees with broad leaves that remain green throughout the year.
+                                    Common species include rosewood, mahogany, and rubber.</li>
+                                <li><strong>Tropical Deciduous Forests:</strong> These forests are widespread in central
+                                    India and experience distinct wet and dry seasons. The trees shed their leaves
+                                    during the dry season to conserve water. Common species include teak, sal, and
+                                    sandalwood.</li>
+                                <li><strong>Subtropical Broadleaf Forests:</strong> Found in the Himalayan foothills,
+                                    these forests have broad-leaved trees like oaks, laurels, and chestnuts.</li>
+                                <li><strong>Subtropical Pine Forests:</strong> These forests occur in the higher
+                                    Himalayas and are dominated by pine trees like Chir Pine.</li>
+                                <li><strong>Temperate Forests:</strong> Limited in extent, these forests are found in
+                                    the higher Himalayas and comprise coniferous trees like spruce, fir, and cedar.</li>
+                                <li><strong>Mangrove Forests:</strong> These coastal forests thrive in brackish water
+                                    and play a crucial role in coastal protection. Common mangrove species include
+                                    Sundri and Rhizophora.</li>
+                            </ul>
+                        </div>
+                        <div class="forest-types-map">
+                            <a href="https://im.ge/i/forestcover.VJ0KPK"><img src="https://i.im.ge/2024/07/28/VJ0KPK.forestcover.jpeg" alt="forestcover" border="0"></a>
+                        </div>
+                    </div>
+                    <div class="economic">
+                        <h2>Economic Importance</h2>
+
+                        <h3>GDP Contribution</h3>
+                        <p>While forests play a crucial role in India's environment and ecology, their direct
+                            contribution to the GDP (Gross Domestic Product) is relatively low, estimated to be around
+                            1%.</p>
+
+                        <p><strong>Here's a breakdown of the factors:</strong></p>
+
+                        <div class="economic-factors">
+                            <div class="factor">
+                                <h4>Limited Direct Contribution</h4>
+                                <div class="factor-content">
+                                    <ul>
+                                        <li><strong>Forestry and Logging Sector:</strong> This sector, which includes
+                                            harvesting timber, fuelwood, and other forest products, contributes a small
+                                            fraction of the GDP.</li>
+                                        <li><strong>Underestimation:</strong> The true economic value of forests is
+                                            often underestimated as it doesn't account for the many indirect benefits
+                                            they provide.</li>
+                                    </ul>
+                                    <a href="https://im.ge/i/gdp.VJ0ZqF"><img src="https://i.im.ge/2024/07/28/VJ0ZqF.gdp.jpeg" alt="gdp" border="0"></a>
+                                </div>
+                            </div>
+
+                            <div class="factor">
+                                <h4>Economic Value and Indirect Benefits</h4>
+                                <div class="factor-content">
+                                    <ul>
+                                        <li><strong>Ecosystem Services:</strong> Forests provide essential ecosystem
+                                            services like water purification, soil conservation, and flood control.
+                                            These services indirectly benefit agriculture, hydropower generation, and
+                                            other sectors.</li>
+                                        <li><strong>Biodiversity:</strong> Forests are home to a vast array of plant and
+                                            animal life, which supports essential resources like medicinal plants,
+                                            honey, and ecotourism.</li>
+                                        <li><strong>Livelihoods:</strong> Millions of people in India rely on forests
+                                            for non-timber forest products (NTFPs) like fruits, nuts, and medicinal
+                                            herbs. This provides income and sustains traditional livelihoods.</li>
+                                        <li><strong>Climate Change Mitigation:</strong> Forests absorb carbon dioxide, a
+                                            greenhouse gas, and help mitigate climate change. This reduces the economic
+                                            costs associated with climate change impacts like droughts and floods.</li>
+                                    </ul>
+                                    <a href="https://im.ge/i/benifit-ofz-forest.VJ0n3D"><img src="https://i.im.ge/2024/07/28/VJ0n3D.benifit-ofz-forest.jpeg" alt="benifit ofz forest" border="0"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conservation">
+                        <h2>Conservation Efforts</h2>
+
+                        <h3>Protected Areas</h3>
+                        <p>India has a rich history of forest conservation, and several initiatives aim to protect its
+                            valuable forest ecosystems. Here's a breakdown:</p>
+
+                        <div class="conservation-efforts">
+                            <div class="effort">
+                                <h4>Legislation and Policies</h4>
+                                <div class="effort-content">
+                                    <div class="content-text">
+                                        <ul>
+                                            <li><strong>National Parks:</strong> Highest level of protection, with no
+                                                human habitation or resource extraction allowed.</li>
+                                            <li><strong>Wildlife Sanctuaries:</strong> Focus on protecting specific
+                                                species or habitats with limited human activity.</li>
+                                            <li><strong>Conservation Reserves:</strong> Areas with valuable flora and
+                                                fauna, where regulated resource use might be allowed.</li>
+                                            <li><strong>Forest Conservation Act, 1980:</strong> Regulates the diversion
+                                                of forest land for non-forestry purposes, requiring compensatory
+                                                afforestation (planting trees elsewhere).</li>
+                                            <li><strong>The Wildlife (Protection) Act, 1972:</strong> This act forms the
+                                                legislative framework for wildlife protection and establishes three
+                                                categories of protected areas.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-image">
+                                        <a href="https://im.ge/i/nationalpark.VJ0Vk9"><img src="https://i.im.ge/2024/07/28/VJ0Vk9.nationalpark.webp" alt="nationalpark" border="0"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="effort">
+                                <h4>Protected Area Network</h4>
+                                <div class="effort-content">
+                                    <div class="content-text">
+                                        <p>India boasts a vast network of protected areas covering over
+                                            <strong>15%</strong> of its geographical land area. This includes:
+                                        </p>
+                                        <ul>
+                                            <li>Over 100 National Parks</li>
+                                            <li>Over 500 Wildlife Sanctuaries</li>
+                                            <li>Community Reserves and Conservation Reserves</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-image">
+                                        <a href="https://im.ge/i/wildlifeconservation.VJ0JLY"><img src="https://i.im.ge/2024/07/28/VJ0JLY.wildlifeconservation.jpeg" alt="wildlifeconservation" border="0"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="effort">
+                                <h4>Government Initiatives</h4>
+                                <div class="effort-content">
+                                    <div class="content-text">
+                                        <ul>
+                                            <li><strong>National Mission on a Green India:</strong> Launched in 2011,
+                                                this mission aims to increase forest cover and improve forest quality.
+                                            </li>
+                                            <li><strong>Joint Forest Management (JFM):</strong> This program involves
+                                                local communities in forest management, fostering a sense of ownership
+                                                and reducing deforestation.</li>
+                                            <li><strong>Project Tiger:</strong> This flagship program focuses on the
+                                                conservation of the Bengal Tiger, a keystone species in Indian forests.
+                                            </li>
+                                            <li><strong>National Afforestation Programme (NAP):</strong> Promotes
+                                                large-scale afforestation activities across the country.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-image">
+                                        <a href="https://im.ge/i/plant.VJ0HRh"><img src="https://i.im.ge/2024/07/28/VJ0HRh.plant.png" alt="plant" border="0"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deforestation">
+                        <h2>Challenges</h2>
+
+                        <h3>Deforestation</h3>
+                        <p>India faces a significant challenge with deforestation, despite its rich forest cover and
+                            conservation efforts.
+                            Here's a closer look at the major causes and their impacts:
+                        </p>
+
+                        <div class="deforestation-pointers">
+                            <div class="pointers">
+                                <h4>Deforestation Causes</h4>
+                                <div class="pointers-content">
+                                    <div class="content-text">
+                                        <ul>
+                                            <li><b>Agriculture Expansion:</b> As India's population grows, the demand
+                                                for
+                                                agricultural land increases. This
+                                                leads to the conversion of forest land into farms, reducing forest
+                                                cover.
+                                            </li>
+                                            <li><b>Fuelwood Needs:</b> A large portion of India's rural population
+                                                depends
+                                                on firewood for cooking and
+                                                heating. Unsustainable firewood collection can lead to deforestation.
+                                            </li>
+                                            <li><b>Infrastructure Development:</b> Building roads, dams, and other
+                                                infrastructure projects often requires
+                                                clearing forests, leading to habitat loss and fragmentation.</li>
+                                            <li><b>Mining and Industrial Activities:</b> Mining for resources like coal
+                                                and
+                                                iron ore can have a devastating
+                                                impact on forests, causing deforestation and pollution.</li>
+                                            <li><b>Livestock Grazing:</b> Overgrazing by livestock can damage forest
+                                                ecosystems and reduce regeneration.</li>
+                                            <li><b>Ineffective Forest Management:</b> Weak governance and inadequate
+                                                enforcement of regulations can
+                                                contribute to deforestation.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-image">
+                                        <a href="https://im.ge/i/deforestation-causes.Vn3VN1"><img src="https://i.im.ge/2024/07/29/Vn3VN1.deforestation-causes.jpeg" alt="deforestation causes" border="0"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pointers">
+                                <h4>Impacts of Deforestation</h4>
+                                <div class="pointers-content">
+                                    <div class="content-text">
+                                        <ul>
+                                            <li><b>Loss of Biodiversity:</b> Forests are home to a vast array of plant
+                                                and
+                                                animal life. Deforestation
+                                                destroys habitats, leading to species extinction and a decline in
+                                                biodiversity.</li>
+                                            <li><b>Soil Erosion:</b> Forests play a crucial role in soil conservation.
+                                                When
+                                                trees are removed, soil
+                                                becomes exposed to wind and rain, leading to erosion and loss of
+                                                fertility.
+                                            </li>
+                                            <li><b>Water Scarcity:</b> Forests help regulate water cycles and maintain
+                                                water
+                                                tables. Deforestation
+                                                disrupts these processes, leading to water scarcity and impacting
+                                                agricultural productivity.
+                                            </li>
+                                            <li><b>Increased Climate Change Impacts:</b> Forests absorb carbon dioxide,
+                                                a
+                                                greenhouse gas. Deforestation
+                                                contributes to climate change by releasing stored carbon dioxide into
+                                                the
+                                                atmosphere</li>
+                                            <li><b>Livelihood Loss:</b> Forests provide essential resources and income
+                                                for
+                                                millions of people in India.
+                                                Deforestation threatens these livelihoods and can lead to poverty.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-image">
+                                        <a href="https://im.ge/i/impact-of-deforestation.VJ08xz"><img src="https://i.im.ge/2024/07/28/VJ08xz.impact-of-deforestation.jpeg" alt="impact of deforestation" border="0"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pointers">
+                                <h4>Addressing the Challenge</h4>
+                                <div class="pointers-content">
+                                    <div class="content-text">
+                                        <ul>
+                                            <li><b>Sustainable Forestry Practices:</b> Implementing sustainable logging
+                                                practices and promoting tree
+                                                plantation programs can help meet resource needs without depleting
+                                                natural
+                                                forests.</li>
+                                            <li><b>Empowering Local Communities:</b> Involving local communities in
+                                                forest
+                                                management can create a
+                                                sense of ownership and reduce deforestation.</li>
+                                            <li><b>Regulations and Enforcement:</b> Strengthening legislation and
+                                                regulations on deforestation, along
+                                                with effective enforcement mechanisms, is crucial.</li>
+                                            <li><b>Promoting Alternatives:</b> Encouraging the use of alternative energy
+                                                sources like solar power to
+                                                reduce dependence on fuelwood.</li>
+                                            <li><b>Public Awareness:</b> Educating the public about the importance of
+                                                forests and the consequences of
+                                                deforestation can foster support for conservation efforts.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-image">
+                                        <a href="https://im.ge/i/preventive-measure-deforestation.VJ0z98"><img src="https://i.im.ge/2024/07/28/VJ0z98.preventive-measure-deforestation.jpeg" alt="preventive measure deforestation" border="0"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">World Map</a></li>
+                            <li><a href="#">Plant Tree</a></li>
+                            <li><a href="#">Your Tree</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Top Forests</h4>
+                        <ul>
+                            <li><a href="#">Amazon Rainforest</a></li>
+                            <li><a href="#">Congo Rainforest</a></li>
+                            <li><a href="#">Daintree Rainforest</a></li>
+                            <li><a href="#">Tongass National Forest</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="/loading.js"></script>
+    <script src="/Country/script.js"></script>
+    <script src="/Country/weather.js"></script>
+    <script src="/Country/video.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,578 @@
+.body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.body .welcome {
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.body h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+.body p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+.learn-more {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.learn-more:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255,255,255,0.1);
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+} 
+
+
+.learn-more:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #4CAF50;
+}
+
+.learn-more:hover:before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .body h1 {
+        font-size: 2.5rem;
+    }
+    .body p {
+        font-size: 1.2rem;
+    }
+    .learn-more {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .body h1 {
+        font-size: 2rem;
+    }
+    .body p {
+        font-size: 1rem;
+    }
+    .learn-more {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+#more-info {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 60px 20px;
+        }
+
+        .overview {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #252525;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .overview h2 {
+            color: #4CAF50;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 15px;
+        }
+
+        .overview h3 {
+            color: #4CAF50;
+            font-size: 2.2rem;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .overview h3::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 30px;
+            background-color: #4CAF50;
+            border-radius: 4px;
+        }
+
+        .overview p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #cccccc;
+        }
+
+        .forest-cover {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .forest-cover-info {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .forest-types {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .forest-types-info {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .body ul {
+            padding-left: 20px;
+        }
+
+        .body li {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .body li::before {
+            content: '•';
+            color: #4CAF50;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .forest-types-map {
+            flex: 1;
+            text-align: center;
+        }
+
+        .forest-types-map img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .forest-cover, .forest-types {
+                flex-direction: column;
+            }
+
+            .forest-cover-info, .forest-types-info {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+
+            .overview {
+                padding: 30px 20px;
+            }
+
+            .overview h2 {
+                font-size: 2.4rem;
+            }
+
+            .overview h3 {
+                font-size: 2rem;
+            }
+        }
+
+        .economic {
+            background-color: #252525;
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .economic h2 {
+            color: #4CAF50;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 15px;
+        }
+        
+        .economic h3 {
+            color: #4CAF50;
+            font-size: 2.2rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .economic h4 {
+            color: #4CAF50;
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .economic p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+        
+        .economic-factors {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        
+        .factor {
+            flex: 1;
+            margin: 0 15px;
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .factor h4 {
+            color: #4CAF50;
+            font-size: 1.8rem;
+            padding: 20px;
+            margin: 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .factor:hover h4 {
+            background-color: #4CAF50;
+            color: #121212;
+        }
+        
+        .factor-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        
+        .factor:hover .factor-content {
+            max-height: 1000px; /* Adjust this value based on your content */
+        }
+        
+        .factor ul {
+            padding: 0 20px 20px;
+            margin: 0;
+        }
+        
+        .factor li {
+            margin-bottom: 15px;
+            color: #cccccc;
+        }
+        
+        .factor img {
+            width: 100%;
+            height: auto;
+            display: block;
+            padding: 0 20px 20px;
+            box-sizing: border-box;
+        }
+        
+        @media (max-width: 768px) {
+            .economic-factors {
+                flex-direction: column;
+            }
+        
+            .factor {
+                margin: 15px 0;
+            }
+        }
+
+        .conservation {
+            background-color: #252525;
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .conservation h2 {
+            color: #4CAF50;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 15px;
+        }
+        
+        .conservation h3 {
+            color: #4CAF50;
+            font-size: 2.2rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .conservation > p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+        
+        .conservation-efforts {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .effort {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .effort h4 {
+            color: #4CAF50;
+            font-size: 1.8rem;
+            padding: 20px;
+            margin: 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .effort:hover h4 {
+            background-color: #4CAF50;
+            color: #121212;
+        }
+        
+        .effort-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            display: flex;
+        }
+        
+        .effort:hover .effort-content {
+            max-height: 1000px; /* Adjust this value based on your content */
+        }
+        
+        .content-text {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .content-text ul, .content-text p {
+            margin: 0;
+            color: #cccccc;
+        }
+        
+        .content-text li {
+            margin-bottom: 15px;
+        }
+        
+        .content-image {
+            flex: 0 0 40%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .content-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .conservation h2 {
+                font-size: 2.4rem;
+            }
+        
+            .conservation h3 {
+                font-size: 2rem;
+            }
+        
+            .effort h4 {
+                font-size: 1.6rem;
+            }
+        
+            .effort-content {
+                flex-direction: column;
+            }
+        
+            .content-image {
+                padding-top: 0;
+            }
+        }
+        .deforestation {
+            background-color: #252525;
+            border-radius: 15px;
+            padding: 40px;
+            margin-top: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .deforestation h2 {
+            color: #4CAF50;
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 15px;
+        }
+        
+        .deforestation h3 {
+            color: #4CAF50;
+            font-size: 2.2rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .deforestation > p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+        
+        .deforestation-pointers{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .pointers {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .pointers h4 {
+            color: #4CAF50;
+            font-size: 1.8rem;
+            padding: 20px;
+            margin: 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .pointers:hover h4 {
+            background-color: #4CAF50;
+            color: #121212;
+        }
+        
+        .pointers-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            display: flex;
+        }
+        
+        .pointers:hover .pointers-content {
+            max-height: 1000px; /* Adjust this value based on your content */
+        }
+        
+        .content-text {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .content-text ul, .content-text p {
+            margin: 0;
+            color: #cccccc;
+        }
+        
+        .content-text li {
+            margin-bottom: 15px;
+        }
+        
+        .content-image {
+            flex: 0 0 40%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .content-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .deforestation h2 {
+                font-size: 2.4rem;
+            }
+        
+            .deforestation h3 {
+                font-size: 2rem;
+            }
+        
+            .pointers h4 {
+                font-size: 1.6rem;
+            }
+        
+            .pointers-content {
+                flex-direction: column;
+            }
+        
+            .content-image {
+                padding-top: 0;
+            }
+        }

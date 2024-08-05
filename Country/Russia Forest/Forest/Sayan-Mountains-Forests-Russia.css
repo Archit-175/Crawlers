@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/07/31/VGPfxL.Russia1.jpeg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VGPfxL.Russia1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VGPkJG.Russia5.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VGPHdx.Russia3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VGPpPa.Russia4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VGPvfJ.Russia2.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/31/VGPnuy.Russia6.jpeg);
+    }
+}

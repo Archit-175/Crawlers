@@ -1,0 +1,24 @@
+.main {
+    background-image: url(https://i.im.ge/2024/07/28/VJ5ajx.Boreal1.webp);
+    animation: change 15s infinite ease-in-out;
+}
+@keyframes change {
+    0% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5ajx.Boreal1.webp);
+    }
+    20% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5ITJ.Boreal2.jpeg);
+    }
+    40% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ5h4z.Boreal3.jpeg);
+    }
+    60% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ50s6.Boreal4.jpeg);
+    }
+    80% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ55yF.Boreal5.jpeg);
+    }
+    100% {
+        background-image: url(https://i.im.ge/2024/07/28/VJ59zK.Boreal6.jpeg);
+    }
+}

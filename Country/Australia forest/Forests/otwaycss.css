@@ -1,0 +1,30 @@
+.main{
+    background-image: url(https://i.im.ge/2024/07/29/VnqIuD.otway1.jpeg);
+    animation:   change 10s infinite ease-in-out;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VnqIuD.otway1.jpeg);
+    }
+    20%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vnqsdh.otway2.jpeg);
+    }
+    40%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vnq7fY.otway3.jpeg);
+    }
+    60%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vnq0Ip.otway4.jpeg);
+    }
+    80%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/VnqiQq.otway5.jpeg);
+    }
+    100%
+    {
+        background-image: url(https://i.im.ge/2024/07/29/Vnq5xP.otway6.jpeg);
+    }
+}
