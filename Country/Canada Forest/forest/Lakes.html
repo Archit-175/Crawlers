@@ -4,26 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smoky Mountain</title>
-    <link rel="stylesheet" href="/headerforest.css">
+    <title>Lakes-ST</title>
+    <link rel="stylesheet" href="/loading.css">
+    <link rel="stylesheet" href="/Country/headerforest.css">
+    <link rel="stylesheet" href="/Country/forestfooter.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="/Main_stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Country/Main_stylesheet.css">
     <link rel="stylesheet" href="Lakes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <header>
-        <input type ="checkbox" name ="" id ="chk1">
-        <div class="logo"><h1>Crawler</h1></div>
-            <ul>
-            <li>   <li>        </ul>
-            <div class="menu">
-                <label for="chk1">
-                    <i class="fa fa-bars"></i>
-                </label>
-            </div>
-    </header>
+    <div id="loading">
+        <h1>Please wait&nbsp;&nbsp;&nbsp;</h1>
+       
+        <div class="hand-container">
+            <div class="hand" id="right-hand">👉</div>
+            <div class="hand" id="left-hand">👈</div>
+        </div>
+    </div>
+   <header>
+       <input type="checkbox" name="" id="chk1">
+       <a href="/index.html">
+           <div class="logo">
+               <svg class="flicker-svg" viewBox="0 0 200 200">
+                   <image href="/1.svg" x="0" y="0" height="200px" width="200px" class="flicker-image-1" />
+                   <image href="/2.svg" x="0" y="0" height="200px" width="200px" class="flicker-image-2" />
+                   <image href="/3.svg" x="0" y="0" height="200px" width="200px" class="flicker-image-3" />
+                   <image href="/4.svg" x="0" y="0" height="200px" width="200px" class="flicker-image-4" />
+               </svg>
+           </div>
+       </a>
+
+       <ul>
+           <li>
+               <div class="search-box">
+                   <input type="text" id="input-box" placeholder="Search any country/forest" autocomplete="off">
+                   <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                   <div class="result-box"></div>
+               </div>
+           </li>
+           <li><a href="/index.html">Home<span></span></a></li>
+           <li><a href="/Gallary/Gallary.html">Gallery<span></span></a></li>
+           <li><a href="/Carrers/carrers.html">Careers<span></span></a></li>
+           <li><a href="/Quiz/index.html">Quiz<span></span></a></li>
+       </ul>
+       <div class="menu">
+           <label for="chk1">
+               <i class="fa fa-bars"></i>
+           </label>
+       </div>
+   </header>
+
+
     <div class="scroll-watcher"></div>
     <div class="main">
         <div class="overlay"></div>
@@ -37,7 +70,7 @@
 
     <section class="first">
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ54Xa.Lakesintro.jpeg" alt="Lakesintro" border="0"></div>
+            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ54Xa.Lakesintro.jpeg" id="image" alt="Lakesintro" border="0"></div>
             <div class="content">
                 <div class="title">
                     Introduction
@@ -48,7 +81,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5p1L.Lakesgeo.jpeg" alt="Lakesgeo" border="0"></div>
+            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5p1L.Lakesgeo.jpeg" id="image" alt="Lakesgeo" border="0"></div>
             <div class="content">
                 <div class="title">
                     Geographical Significance
@@ -59,7 +92,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5zHc.LakesFlora1.jpeg" alt="LakesFlora1" border="0"></div>
+            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5zHc.LakesFlora1.jpeg" id="image" alt="LakesFlora1" border="0"></div>
             <div class="content">
                 <div class="title">
                     Biodiversity: Flora
@@ -70,7 +103,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/30/V4qc2h.MotaneFauna1.jpeg" alt="Lakesfauna1" border="0">
+            <div class="img_info"><img src="https://i.im.ge/2024/07/30/V4qc2h.MotaneFauna1.jpeg" id="image" alt="Lakesfauna1" border="0">
             </div>
             <div class="content">
                 <div class="title">
@@ -82,7 +115,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5kAT.Lakesflora2.jpeg" alt="Lakesflora2" border="0"></div>
+            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5kAT.Lakesflora2.jpeg" id="image" alt="Lakesflora2" border="0"></div>
             <div class="content">
                 <div class="title">
                     Ecological Importance
@@ -93,7 +126,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5fa0.Lakesfauna2.jpeg" alt="Lakesfauna2" border="0"></div>
+            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5fa0.Lakesfauna2.jpeg" id="image" alt="Lakesfauna2" border="0"></div>
             <div class="content">
                 <div class="title">
                     Socio-Economic Value
@@ -104,7 +137,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5vmG.LakesFlora3.jpeg" alt="LakesFlora3" border="0"></div>
+            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5vmG.LakesFlora3.jpeg" id="image" alt="LakesFlora3" border="0"></div>
             <div class="content">
                 <div class="title">
                     Conservation Challenges
@@ -115,7 +148,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5BhJ.LakesFauna3.jpeg" alt="LakesFauna3" border="0"></div>
+            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5BhJ.LakesFauna3.jpeg" id="image" alt="LakesFauna3" border="0"></div>
             <div class="content">
                 <div class="title">
                     Conservation Efforts
@@ -126,7 +159,7 @@
             </div>
         </div>
         <div class="description">
-            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5KBW.Lakesfauna4.jpeg" alt="Lakesfauna4" border="0"></div>
+            <div class="img_info"><img src="https://i.im.ge/2024/07/28/VJ5KBW.Lakesfauna4.jpeg" id="image" alt="Lakesfauna4" border="0"></div>
             <div class="content">
                 <div class="title">
                     Conclusion
@@ -141,6 +174,8 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="/main js.js"></script>
+    <script src="/loading.js"></script>
+    <script src="/search-box.js"></script>
 
     
     
