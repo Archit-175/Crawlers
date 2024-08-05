@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/Country/header.css">
+    <link rel="stylesheet" href="/loading.css">
     <link rel="stylesheet" href="/Country/slider.css">
     <link rel="stylesheet" href="/Country/body.css">
     <link rel="stylesheet" href="/Country/video.css">
@@ -40,6 +41,14 @@
 </head>
 
 <body>
+    <div id="loading">
+        <h1>Please wait&nbsp;&nbsp;&nbsp;</h1>
+       
+        <div class="hand-container">
+            <div class="hand" id="right-hand">👉</div>
+            <div class="hand" id="left-hand">👈</div>
+        </div>
+    </div>
     <div id="video-container">
         <video id="intro-video" width="100%" height="100%" autoplay muted playsinline>
             <source src="china.mp4" type="video/mp4">
@@ -47,29 +56,38 @@
         </video>
     </div>
     <main class="maincontent">
-    <header>
-        <input type="checkbox" name="" id="chk1">
-        <div class="logo">
-            <h1>Crawler</h1>
-        </div>
-        <div class="search-box">
-            <form>
-                <input type="text" name="search" id="srch" placeholder="Search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Quiz</a></li>
-        </ul>
-        <div class="menu">
-            <label for="chk1">
-                <i class="fa fa-bars"></i>
-            </label>
-        </div>
-    </header>
+        <header>
+            <input type="checkbox" name="" id="chk1">
+            <a href="/index.html">
+                <div class="logo">
+                    <svg class="flicker-svg" viewBox="0 0 200 200">
+                        <image href="/1.svg" x="0" y="0" height="200px" width="200px" class="flicker-image-1" />
+                        <image href="/2.svg" x="0" y="0" height="200px" width="200px" class="flicker-image-2" />
+                        <image href="/3.svg" x="0" y="0" height="200px" width="200px" class="flicker-image-3" />
+                        <image href="/4.svg" x="0" y="0" height="200px" width="200px" class="flicker-image-4" />
+                    </svg>
+                </div>
+            </a>
+    
+            <ul>
+                <li>
+                    <div class="search-box">
+                        <input type="text" id="input-box" placeholder="Search any country/forest" autocomplete="off">
+                        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="result-box"></div>
+                    </div>
+                </li>
+                <li><a href="/index.html">Home<span></span></a></li>
+                <li><a href="/Gallary/Gallary.html">Gallery<span></span></a></li>
+                <li><a href="/Carrers/carrers.html">Careers<span></span></a></li>
+                <li><a href="/Quiz/index.html">Quiz<span></span></a></li>
+            </ul>
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+        </header>
 
     <section class="banner">
         <div class="slider">
@@ -379,51 +397,52 @@
             </div>
         </section>
             
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>company</h4>
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">our services</a></li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">affiliate program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">World Map</a></li>
-                        <li><a href="#">Plant Tree</a></li>
-                        <li><a href="#">Your Tree</a></li>
-                        <li><a href="#">payment options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Top Forests</h4>
-                    <ul>
-                        <li><a href="#">Amazon Rainforest</a></li>
-                        <li><a href="#">Congo Rainforest</a></li>
-                        <li><a href="#">Daintree Rainforest</a></li>
-                        <li><a href="#">Tongass National Forest</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">World Map</a></li>
+                            <li><a href="/planttree.html">Plant Tree</a></li>
+                            <li><a href="/Carrers/carrers.html">Join Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Top Forests</h4>
+                        <ul>
+                            <li><a href="/Country/Brazil Forest/forest/Amazon forests.html">Amazon Rainforest</a></li>
+                            <li><a href="/Country/Russia Forest/Forest/Taiga-Boreal.html">Taiga-Boreal forest</a></li>
+                            <li><a href="/Country/Australia forest/Forests/Daintree.html">Daintree Rainforest</a></li>
+                            <li><a href="/Country/USA forest/Forest/Tongass_Nationalpark.html">Tongass National Forest</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-   </footer>
+    </footer>
   
     </main>
+    <script src="search-box.js"></script>
+    <script src="/loading.js"></script>
     <script src="/Country/script.js"></script>
     <script src="/Country/weather.js"></script>
     <script src="/Country/video.js"></script>
