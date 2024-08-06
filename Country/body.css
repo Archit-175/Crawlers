@@ -295,7 +295,7 @@
         
         .factor:hover h4 {
             background-color: #4CAF50;
-            color: #121212;
+            color: black;
         }
         
         .factor-content {
@@ -337,7 +337,7 @@
         }
 
         .conservation {
-            background-color: #252525;
+            background-color: black;
             border-radius: 15px;
             padding: 40px;
             margin-top: 60px;
@@ -376,7 +376,7 @@
         }
         
         .effort {
-            background-color: #2a2a2a;
+            background-color: black;
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s ease;
@@ -393,7 +393,7 @@
         
         .effort:hover h4 {
             background-color: #4CAF50;
-            color: #121212;
+            color: black;
         }
         
         .effort-content {
@@ -457,7 +457,7 @@
             }
         }
         .deforestation {
-            background-color: #252525;
+            background-color: black;
             border-radius: 15px;
             padding: 40px;
             margin-top: 60px;
@@ -496,7 +496,7 @@
         }
         
         .pointers {
-            background-color: #2a2a2a;
+            background-color:black;
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s ease;
