@@ -1,7 +1,17 @@
 
  const fileMapping = {
     'India': '/Country/India Forest/india.html',
-    
+    'Russia': '/Country/ Russia Forest/russia.html',
+    'Canada': '/Country/Canada Forest/Canada.html',
+    'Brazil': '/Country/Brazil Forest/Brazil.html',
+    'USA': '/Country/USA Forest/USA.html',
+    'China': '/Country/China Forest/China.html',
+    'Australia': '/Country/India Forest/Australia.html',
+    'Jim Corbett NP': '/Country/India Forest/Forests/Corbett.html ',
+    'Deccan forests':  '/Country/India Forest/Forests/Deccan-forest.html ',
+    'Kaziranga National Park' :  '/Country/India Forest/Forests/Corbett.html ',
+    'Sundarbans' : '/Country/India Forest/Forests/Sundarbun.html ',
+    'Western Ghats' :  '/Country/India Forest/Forests/Westerm_Ghats.html '
 
 };
 
