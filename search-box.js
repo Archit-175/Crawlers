@@ -12,6 +12,20 @@
     'Kaziranga National Park' :  '/Country/India Forest/Forests/Corbett.html ',
     'Sundarbans' : '/Country/India Forest/Forests/Sundarbun.html ',
     'Western Ghats' :  '/Country/India Forest/Forests/Westerm_Ghats.html ',
+    'Daintree forest':  '/Country/Australia Forest/Forests/Daintree.html ',
+    'Gondwana forest': '/Country/Australia Forest/Forests/Gondwana.html ',
+    'Otway forest' : '/Country/Australia Forest/Forests/otway.html ',
+    'Tasmania' : '/Country/Australia Forest/Forests/tasmania.html ',
+    'Amazon forests' : '/Country/Brazil Forest/forest/Amazon forests.html ',
+    'Cachoeria da Neblina ' : '/Country/Brazil Forest/forest/Cachoeria-da-Neblina.html ',
+    'Floresta da Tijuka' : '/Country/Brazil Forest/forest/floresta-da-tijuka.html ',
+    'Parque de Sinopa' : '/Country/Brazil Forest/forest/Parque-de-Sinopa.html ',
+    'Acadian Forest' : '/Country/Canada Forest/forest/Acadian.html ',
+    'Boreal Forest' : '/Country/Canada Forest/forest/Boreal.html ',
+    'Columbia Forest': '/Country/Canada Forest/forest/Columbia.html ',
+    'Lakes' : '/Country/Canada Forest/forest/Lakes.html ',
+    'Montane forest' : '/Country/Canada Forest/forest/Montane.html ',
+  
 
 };
 
