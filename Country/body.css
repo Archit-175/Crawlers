@@ -92,7 +92,7 @@
 }
 
 #more-info {
-            background-color: #1e1e1e;
+            background-color: black;
             color: #e0e0e0;
             padding: 60px 20px;
         }
@@ -100,7 +100,7 @@
         .overview {
             max-width: 1200px;
             margin: 0 auto;
-            background-color: #252525;
+            background-color:black;
             border-radius: 15px;
             padding: 40px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -150,7 +150,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 50px;
-            background-color: #2a2a2a;
+            background-color: black;
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -165,7 +165,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            background-color: #2a2a2a;
+            background-color: black;
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -230,7 +230,7 @@
         }
 
         .economic {
-            background-color: #252525;
+            background-color: black;
             border-radius: 15px;
             padding: 40px;
             margin-top: 60px;
@@ -278,7 +278,7 @@
         .factor {
             flex: 1;
             margin: 0 15px;
-            background-color: #2a2a2a;
+            background-color:black;
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s ease;
