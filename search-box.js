@@ -1,7 +1,7 @@
 
  const fileMapping = {
     'India': '/Country/India Forest/india.html',
-    'Russia': '/Country/ Russia Forest/russia.html',
+    'Russia': '/Country/Russia Forest/russia.html',
     'Canada': '/Country/Canada Forest/Canada.html',
     'Brazil': '/Country/Brazil Forest/Brazil.html',
     'USA': '/Country/USA Forest/USA.html',
