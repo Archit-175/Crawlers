@@ -11,7 +11,7 @@
     'Deccan forests':  '/Country/India Forest/Forests/Deccan-forest.html ',
     'Kaziranga National Park' :  '/Country/India Forest/Forests/Corbett.html ',
     'Sundarbans' : '/Country/India Forest/Forests/Sundarbun.html ',
-    'Western Ghats' :  '/Country/India Forest/Forests/Westerm_Ghats.html '
+    'Western Ghats' :  '/Country/India Forest/Forests/Westerm_Ghats.html ',
 
 };
 
