@@ -11,6 +11,8 @@ app.use(express.static(path.join(__dirname, './')));
 // Create a transporter using Gmail service
 const transporter = nodemailer.createTransport({
   service: 'gmail',
+  secure: true,
+  port: 465,
   auth: {
     user: 'architsavaliya175@gmail.com',
     pass: 'ybsp kxzw fbig gcab'   }
@@ -25,7 +27,7 @@ app.post('/submit', async (req, res) => {
     // Send thank you email to donor
     const mailOptions = {
         from: 'architsavaliya175@gmail.com',
-      to: email,
+      to: 'architsavaliya175@gmail.com',
       subject: "Thank You for Your Donation",
       html: `
         <h2>Thank You for Your Donation!</h2>
@@ -45,11 +47,7 @@ app.post('/submit', async (req, res) => {
         } else {
           console.log('Email sent: ' + info.response);
           res.status(200).send('Receipt email sent');
-          Swal.fire({
-                                title: "Success!",
-                                text: "Your message and donation details sent successfully!",
-                                icon: "success"
-                            });
+         
         }
       });
     });
@@ -58,7 +56,6 @@ app.post('/submit', async (req, res) => {
         res.sendFile(path.join(__dirname, './', 'plantree.html'));
       });
       
-      // const PORT = process.env.PORT || 3002;
-      // app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+      const PORT = process.env.PORT || 3002;
+      app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
       
-      module.exports = app;
