@@ -104,6 +104,7 @@
             border-radius: 15px;
             padding: 40px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            background: #121212;
         }
 
         .overview h2 {
@@ -153,7 +154,8 @@
             background-color: black;
             border-radius: 10px;
             padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+            background: #131313;
         }
 
         .forest-cover-info {
