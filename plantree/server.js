@@ -58,6 +58,7 @@ app.post('/submit', async (req, res) => {
         res.sendFile(path.join(__dirname, './', 'plantree.html'));
       });
       
-      const PORT = process.env.PORT || 3002;
-      app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+      // const PORT = process.env.PORT || 3002;
+      // app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
       
+      module.exports = app;
