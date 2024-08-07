@@ -248,7 +248,7 @@ body {
     .img_info {
         margin-bottom: 20px;
         width: 100%;
-        /* Full width for images on small screens */
+     
     }
 
     .information {
@@ -285,7 +285,7 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
     .main .maintitle {
         font-size: 3.5rem;
-        /* Adjusted for better readability */
+       
     }
 
     .main .shortinfo {
@@ -307,19 +307,38 @@ body {
     .img_info {
         margin-right: 20px;
         width: 45vw;
-        /* Adjusted width for images on medium screens */
+        
     }
 
     .information {
         font-size: 1.2rem;
-        /* Adjusted font size for readability */
     }
 
     .content {
         width: 80vw;
-        /* Adjusted width for better fit on medium screens */
     }
 }
+@media (min-width: 1025px) {
+    .main .maintitle {
+        font-size: 7rem;
+    }
+    .main .destitle {
+        font-size: 4rem;
+    }
+    .description {
+        gap: 40px;
+    }
+    .img_info {
+        width: 60vh;
+    }
+    .information {
+        font-size: 1.8rem;
+    }
+    .content {
+        width: 70vw;
+    }
+}
+
 
 
 
