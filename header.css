@@ -179,9 +179,9 @@ header .search-box{
 .result-box ul li:not(:last-child) {
     border-bottom: 1px solid #3a3a3a;
 }
-.result-box ul li.selected {
-            background:#3a3a3a;
-            
+.result-box li.selected {
+            background-color: #ddd;
+            color: blue; /* Change the color of the selected item */
         }
 header ul {
     flex:2;
