@@ -286,3 +286,14 @@ svg path:hover{
     fill: #44ff00;
     transition: 1s;
   }
+
+  @media(max-width:769px){
+    .map-div{
+        height: 60vh;
+    }
+  }
+  @media(max-width:500px){
+    .map-div{
+        height: 50vh;
+    }
+  }
