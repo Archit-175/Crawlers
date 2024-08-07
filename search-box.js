@@ -5,7 +5,7 @@
             'Brazil': '/Country/Brazil Forest/Brazil.html',
             'USA': '/Country/USA forest/USA.html',
             'China': '/Country/China Forest/China.html',
-            'Australia': '/Country/India Forest/Australia.html',
+            'Australia': '/Country/Australia Forest/Australia.html',
             'Jim Corbett NP': '/Country/India Forest/Forests/Corbett.html ',
             'Deccan forests': '/Country/India Forest/Forests/Deccan-forest.html ',
             'Kaziranga National Park': '/Country/India Forest/Forests/Corbett.html ',
