@@ -26,16 +26,16 @@
     'Lakes' : '/Country/Canada Forest/forest/Lakes.html ',
     'Montane forest' : '/Country/Canada Forest/forest/Montane.html ',
     'Broad Leaf Forest' : '/Country/China Forest/forest/Broad-leaf-forest.html',
-     'Changbai Mountain forest' : '/Country/China Forest/forest/Changbai-mountain-mixed-forest.html',
-    'Sichuan subtropical forest' : '/Country/China Forest/forest/Sichuan-subtropical-forest.html',
-    'Tibetian Forest' : '/Country/China Forest/forest/Tibetian-plateau-forest.html',
-    'Caucasus Forest' : '/Country/Russia Forest/Forest/Caucasus.html',
-    'Sayan Mountain Forests' : '/Country/Russia Forest/Forest/Sayan-Mountains-Forests-Russia.html',
-    'Taiga Boreal Forests': '/Country/Russia Forest/Forest/Taiga-Boreal.html',
-    'Everglade Forest' : '/Country/USA forest/Forest/Everglade.html',
-    'Olympic National Forest' : '/Country/USA forest/Forest/Olympic_Nationalpark.html',
-    'Smoky Mountain Forests' : '/Country/USA forest/Forest/SmokyMountain.html',
-    'Tonagass National Park' : '/Country/USA forest/Forest/Tongass_Nationalpark.html'
+    'Changbai Mountain forest' : '/Country/China Forest/forest/Changbai-mountain-mixed-forest.html',
+   'Sichuan subtropical forest' : '/Country/China Forest/forest/Sichuan-subtropical-forest.html',
+   'Tibetian Forest' : '/Country/China Forest/forest/Tibetian-plateau-forest.html',
+   'Caucasus Forest' : '/Country/Russia Forest/Forest/Caucasus.html',
+   'Sayan Mountain Forests' : '/Country/Russia Forest/Forest/Sayan-Mountains-Forests-Russia.html',
+   'Taiga Boreal Forests': '/Country/Russia Forest/Forest/Taiga-Boreal.html',
+   'Everglade Forest' : '/Country/USA forest/Forest/Everglade.html',
+   'Olympic National Forest' : '/Country/USA forest/Forest/Olympic_Nationalpark.html',
+   'Smoky Mountain Forests' : '/Country/USA forest/Forest/SmokyMountain.html',
+   'Tonagass National Park' : '/Country/USA forest/Forest/Tongass_Nationalpark.html'
   
   
 
