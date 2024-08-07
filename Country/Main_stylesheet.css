@@ -217,6 +217,9 @@ body {
 
 /* Responsiveness */
 @media (max-width: 768px) {
+    .body{
+        overflow:hidden;
+    }
     .main .maintitle {
         font-size: 3.9rem;
     }
