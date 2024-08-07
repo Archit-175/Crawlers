@@ -134,7 +134,7 @@
             top: 50%;
             transform: translateY(-50%);
             width: 8px;
-            height: 30px;
+            height: 60px;
             background-color: #4CAF50;
             border-radius: 4px;
         }
@@ -167,10 +167,10 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            background-color: black;
+            background-color: #121212;
             border-radius: 10px;
             padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.8);
         }
 
         .forest-types-info {
@@ -232,11 +232,11 @@
         }
 
         .economic {
-            background-color: black;
+            background-color: #131313;
             border-radius: 15px;
             padding: 40px;
             margin-top: 60px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
         }
         
         .economic h2 {
@@ -280,10 +280,11 @@
         .factor {
             flex: 1;
             margin: 0 15px;
-            background-color:black;
+            background-color:#131313;
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s ease;
+            box-shadow: 0 10px 7px rgba(0,0,0,0.3);
         }
         
         .factor h4 {
@@ -339,11 +340,11 @@
         }
 
         .conservation {
-            background-color: black;
+            background-color: #131313;
             border-radius: 15px;
             padding: 40px;
             margin-top: 60px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
         }
         
         .conservation h2 {
@@ -378,7 +379,8 @@
         }
         
         .effort {
-            background-color: black;
+            background-color: #131313;
+            box-shadow: 0 10px 7px rgba(0,0,0,0.3);
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s ease;
@@ -459,11 +461,11 @@
             }
         }
         .deforestation {
-            background-color: black;
+            background-color: #131313;
             border-radius: 15px;
             padding: 40px;
             margin-top: 60px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 7px rgba(0,0,0,0.3);
         }
         
         .deforestation h2 {
@@ -498,10 +500,12 @@
         }
         
         .pointers {
-            background-color:black;
+            
             border-radius: 10px;
             overflow: hidden;
             transition: all 0.3s ease;
+            background: #121212;
+            box-shadow: 0 10px 7px rgba(0,0,0,0.3)
         }
         
         .pointers h4 {
@@ -510,6 +514,7 @@
             padding: 20px;
             margin: 0;
             cursor: pointer;
+           
             transition: background-color 0.3s ease;
         }
         
