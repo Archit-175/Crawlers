@@ -4,7 +4,7 @@
     'Russia': '/Country/Russia Forest/Russia.html',
     'Canada': '/Country/Canada Forest/Canada.html',
     'Brazil': '/Country/Brazil Forest/Brazil.html',
-    'USA': '/Country/USA Forest/USA.html',
+    'USA': '/Country/USA forest/USA.html',
     'China': '/Country/China Forest/China.html',
     'Australia': '/Country/India Forest/Australia.html',
     'Jim Corbett NP': '/Country/India Forest/Forests/Corbett.html ',
