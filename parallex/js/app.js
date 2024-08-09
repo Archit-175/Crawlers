@@ -4,5 +4,6 @@ window.addEventListener('scroll', e => {
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 ScrollSmoother.create({
 	wrapper: '.wrapper',
-	content: '.content'
+	content: '.content',
+	body: '.body',
 })
