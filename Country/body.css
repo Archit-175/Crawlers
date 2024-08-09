@@ -588,3 +588,10 @@
                 padding-top: 0;
             }
         }
+
+
+        @media(max-width:400px){
+            .body h2 {
+                font-size: 2rem;
+            }
+        }
