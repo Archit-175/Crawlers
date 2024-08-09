@@ -6,11 +6,11 @@
     background-color: black;
     color: #e0e0e0;
 }
-@media(max-width:425px){
+/* @media(max-width:425px){
     .body{
         width: 125%;
     }
-}
+} */
 .body .welcome {
     height: 100vh;
     background-color: black;

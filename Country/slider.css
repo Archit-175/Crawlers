@@ -5,11 +5,11 @@
     overflow-x: hidden;
 }
 
-@media(max-width:425px){
+/* @media(max-width:425px){
     .banner{
         width: 125%;
     }
-}
+} */
 
 .slider .slide {
     position: absolute;
