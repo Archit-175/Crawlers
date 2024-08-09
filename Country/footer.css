@@ -14,6 +14,11 @@ ul{
 	background-color: #121212;
     padding: 70px 0;
 }
+@media(max-width:425px){
+    .footer{
+        width: 125%;
+    }
+}
 .footer-col{
    width: 25%;
    padding: 0 15px;
