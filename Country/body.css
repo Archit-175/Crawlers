@@ -592,6 +592,6 @@
 
         @media(max-width:400px){
             .body h2 {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
         }
