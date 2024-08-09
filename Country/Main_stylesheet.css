@@ -131,7 +131,7 @@ body {
 
 .img_info {
     flex: 1;
-    margin-right: 0px;
+    margin-right: 20px;
 
 }
 
@@ -251,7 +251,7 @@ body {
     .img_info {
         margin-bottom: 20px;
         width: 100%;
-     
+        margin-right: 0px;
     }
 
     .information {
