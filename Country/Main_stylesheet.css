@@ -131,7 +131,7 @@ body {
 
 .img_info {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 0px;
 
 }
 
@@ -221,7 +221,7 @@ body {
         overflow:hidden;
     }
     .main .maintitle {
-        font-size: 3.9rem;
+        font-size: 2.9rem;
     }
 
     .main .destitle {
@@ -353,6 +353,10 @@ body {
     opacity: 0;
     transform: scale(0.8);
 
+}
+
+@media (max-width: 768px){
+   #image{ width: 40vh;}
 }
 
 .fade-in {
