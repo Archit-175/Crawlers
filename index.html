@@ -1741,7 +1741,8 @@
                     <div class="action-item">
                         <h3>Join Our Community</h3>
                         <p>Connect with like-minded individuals and stay updated on forest conservation efforts.</p>
-                        <button class="cta-button">Join Now</button>
+                        <button class="cta-button" id="showIcons">Join Now</button>
+
                     </div>
                     <div class="action-item">
                         <h3>Support Reforestation</h3>
@@ -1752,6 +1753,33 @@
                         <h3>Share Your Story</h3>
                         <p>Have you witnessed forest damage or participated in conservation? Share your experience!</p>
                         <button class="cta-button">Submit Story</button>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="socialmedia">
+                       <div class="icon facebook">
+                          <div class="tooltip">Facebook</div>
+                          <span><i class="fab fa-facebook-f"></i></span>
+                       </div>
+                       <div class="icon twitter">
+                          <div class="tooltip">Twitter</div>
+                          <span><i class="fab fa-twitter"></i></span>
+                       </div>
+                       <div class="icon instagram">
+                          <div class="tooltip">Instagram</div>
+                          <span><i class="fab fa-instagram"></i></span>
+                       </div>
+                       <div class="icon whatsapp">
+                          <div class="tooltip">WhatsApp</div>
+                          <span><i class="fab fa-whatsapp"></i></span>
+                       </div>
+                       <div class="icon telegram">
+                          <div class="tooltip">Telegram</div>
+                          <span><i class="fab fa-telegram-plane"></i></span>
+                       </div>
+                       <div class="icon youtube">
+                          <div class="tooltip">YouTube</div>
+                          <span><i class="fab fa-youtube"></i></span>
+                       </div>
                     </div>
                 </div>
 
@@ -1807,11 +1835,11 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Follow Us</h4>
+                    <h4>Contact Us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -1820,10 +1848,25 @@
     </footer>
 
     <script>
-        if (!sessionStorage.getItem('pageLoaded')) {
-            sessionStorage.setItem('pageLoaded', 'true');
-            location.reload();
-        }
+        document.getElementById('showIcons').addEventListener('click', function() {
+           var socialmedia = document.querySelector('.socialmedia');
+           var overlay = document.querySelector('.overlay');
+           if (socialmedia.style.display === 'none' || socialmedia.style.display === '') {
+             socialmedia.style.display = 'grid';
+             overlay.style.display = 'block';
+             this.textContent = 'Join Now';
+           } else {
+             socialmedia.style.display = 'none';
+             overlay.style.display = 'none';
+             this.textContent = 'Join Now';
+           }
+         });
+
+         document.querySelector('.overlay').addEventListener('click', function() {
+           this.style.display = 'none';
+           document.querySelector('.socialmedia').style.display = 'none';
+           document.getElementById('showIcons').textContent = 'Join Now';
+         });
     </script>
     <script src="/loading.js"></script>
     <script src="map.js"></script>
