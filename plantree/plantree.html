@@ -5,145 +5,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact and Donation Form</title>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
 
-        body {
-            background-color: #1a1a1a;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+    body {
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+    }
 
-        .contact h2 {
-            font-size: 40px;
-            color: #ededed;
-            text-align: center;
-            margin-bottom: 10px;
-        }
+    .contact h2 {
+        font-size: 40px;
+        color: #ededed;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 
-        .contact form {
-            width: 600px;
-            text-align: center;
-        }
+    .contact form {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
 
+    form .input-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-box .input-field {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .field .item {
+        width: 100%;
+        padding: 18px;
+        background: transparent;
+        border: 2px solid #4CAF50;
+        outline: none;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #ededed;
+        margin: 12px 0;
+    }
+
+    .field.error .item {
+        border-color: #d93025;
+    }
+
+    .field .item::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    .field .error-txt {
+        font-size: 14.5px;
+        color: #d93025;
+        text-align: left;
+        margin: -5px 0 10px;
+        display: none;
+    }
+
+    .field.error .error-txt {
+        display: block;
+    }
+
+    form .textarea-field .item {
+        resize: none;
+    }
+
+    form .textarea-field .error-txt {
+        margin-top: 10px;
+    }
+
+    form button {
+        padding: 12px 32px;
+        background: #4CAF50;
+        color: #333;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        box-shadow: 0 0 10px #4CAF50;
+        font-size: 16px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    form button:hover {
+        box-shadow: none;
+    }
+
+    .donation-section {
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .donation-section h3 {
+        color: #ededed;
+        margin-bottom: 10px;
+    }
+
+    .plant-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .plant-option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .plant-option label {
+        color: #ededed;
+    }
+
+    .plant-option input[type="number"] {
+        width: 60px;
+        padding: 5px;
+        border: 1px solid #4CAF50;
+        background-color: transparent;
+        color: #ededed;
+        border-radius: 4px;
+    }
+
+    .total-price {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #4CAF50;
+    }
+
+    @media screen and (min-width: 768px) {
         form .input-box {
-            display: flex;
+            flex-direction: row;
             justify-content: space-between;
         }
 
         .input-box .input-field {
             width: 48.5%;
         }
+    }
+
+    @media screen and (max-width: 480px) {
+        .contact h2 {
+            font-size: 30px;
+        }
 
         .field .item {
-            width: 100%;
-            padding: 18px;
-            background: transparent;
-            border: 2px solid #4CAF50;
-            outline: none;
-            border-radius: 6px;
-            font-size: 16px;
-            color: #ededed;
-            margin: 12px 0;
-        }
-
-        .field.error .item {
-            border-color: #d93025;
-        }
-
-        .field .item::placeholder {
-            color: rgba(255, 255, 255, 0.3);
-        }
-
-        .field .error-txt {
-            font-size: 14.5px;
-            color: #d93025;
-            text-align: left;
-            margin: -5px 0 10px;
-            display: none;
-        }
-
-        .field.error .error-txt {
-            display: block;
-        }
-
-        form .textarea-field .item {
-            resize: none;
-        }
-
-        form .textarea-field .error-txt {
-            margin-top: 10px;
+            padding: 14px;
+            font-size: 14px;
         }
 
         form button {
-            padding: 12px 32px;
-            background: #4CAF50;
-            color: #333;
-            border: none;
-            outline: none;
-            border-radius: 6px;
-            box-shadow: 0 0 10px #4CAF50;
-            font-size: 16px;
-            margin-top: 20px;
-            letter-spacing: 1px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-
-        form button:hover {
-            box-shadow: none;
-        }
-
-        .donation-section {
-            margin: 20px 0;
-            text-align: left;
-        }
-
-        .donation-section h3 {
-            color: #ededed;
-            margin-bottom: 10px;
-        }
-
-        .plant-options {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .plant-option {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 10px 24px;
+            font-size: 14px;
         }
 
         .plant-option label {
-            color: #ededed;
+            font-size: 14px;
         }
 
         .plant-option input[type="number"] {
-            width: 60px;
-            padding: 5px;
-            border: 1px solid #4CAF50;
-            background-color: transparent;
-            color: #ededed;
-            border-radius: 4px;
+            width: 50px;
+            padding: 3px;
         }
-
-        .total-price {
-            margin-top: 15px;
-            font-weight: bold;
-            color: #4CAF50;
-        }
+    }
+</style>
     </style>
 </head>
 
