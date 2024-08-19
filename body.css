@@ -505,7 +505,40 @@ figcaption {
 
 .footer-col .social-links a i {
     font-size: 18px;
+}
 
+.footer-col .social-links .phone-icon {
+    position: relative;
+}
+
+.footer-col .social-links .phone-icon .phone-number {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.footer-col .social-links .phone-icon:hover .phone-number {
+    display: block;
+}
+
+.footer-col .social-links .phone-icon .phone-number::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4CAF50 transparent transparent transparent;
 }
 
 @media(max-width: 1000px) {
