@@ -560,7 +560,8 @@ figcaption {
 .footer-col .social-links .email-icon:hover i,
 .footer-col .social-links .phone-icon:hover i {
     transform: scale(1.1);
-}@media(max-width: 1000px) {
+}
+@media(max-width: 1000px) {
     .footer-row{
         padding-left: 10%;
     }
