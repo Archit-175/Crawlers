@@ -10,7 +10,7 @@
             'Deccan forests': '/Country/India Forest/Forests/Deccan-forest.html ',
             'Kaziranga National Park': '/Country/India Forest/Forests/Kaziranga.html ',
             'Sundarbans': '/Country/India Forest/Forests/sundarbun.html ',
-            'Western Ghats': '/Country/India Forest/Forests/Westerm_Ghats.html ',
+            'Western Ghats': '/Country/India Forest/Forests/Wester_Ghats.html ',
             'Daintree forest': '/Country/Australia Forest/Forests/Daintree.html ',
             'Gondwana forest': '/Country/Australia Forest/Forests/Gondwana.html ',
             'Otway forest': '/Country/Australia Forest/Forests/otway.html ',
