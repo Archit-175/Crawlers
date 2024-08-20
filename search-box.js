@@ -18,7 +18,7 @@
             'Amazon forests': '/Country/Brazil Forest/forest/Amazon forests.html ',
             'Cachoeria da Neblina': '/Country/Brazil Forest/forest/Cachoeria-da-Neblina.html ',
             'Floresta da Tijuka': '/Country/Brazil Forest/forest/floresta-da-tijuka.html ',
-            'Parque de Sinopa': '/Country/Brazil Forest/forest/Parque-de-Sinopa.html ',
+            'Parque de Sinopa': '/Country/Brazil Forest/forest/Parque-de-sinopa.html ',
             'Acadian Forest': '/Country/Canada Forest/forest/Acadian.html ',
             'Boreal Forest': '/Country/Canada Forest/forest/Boreal.html ',
             'Columbia Forest': '/Country/Canada Forest/forest/Columbia.html ',
