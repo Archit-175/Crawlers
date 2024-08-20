@@ -508,30 +508,39 @@ figcaption {
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
 
+.footer-col .social-links .email-icon,
 .footer-col .social-links .phone-icon {
     position: relative;
 }
 
+.footer-col .social-links .email-icon .email-address,
 .footer-col .social-links .phone-icon .phone-number {
-    display: none;
-    position: absolute;
     font-family: Poppins,"Roboto Slab", serif;
+    display: block;
+    position: absolute;
     background-color: #4CAF50;
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 14px;
-    bottom: 100%;
+    bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
     margin-bottom: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
+.footer-col .social-links .email-icon:hover .email-address,
 .footer-col .social-links .phone-icon:hover .phone-number {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    bottom: 100%;
 }
 
+.footer-col .social-links .email-icon .email-address::after,
 .footer-col .social-links .phone-icon .phone-number::after {
     content: "";
     position: absolute;
@@ -543,7 +552,15 @@ figcaption {
     border-color: #4CAF50 transparent transparent transparent;
 }
 
-@media(max-width: 1000px) {
+.footer-col .social-links .email-icon i,
+.footer-col .social-links .phone-icon i {
+    transition: transform 0.3s ease;
+}
+
+.footer-col .social-links .email-icon:hover i,
+.footer-col .social-links .phone-icon:hover i {
+    transform: scale(1.1);
+}@media(max-width: 1000px) {
     .footer-row{
         padding-left: 10%;
     }
