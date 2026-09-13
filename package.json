@@ -1,0 +1,51 @@
+{
+  "name": "web-wonders-crawlers",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node scripts/start.mjs --dev",
+    "build": "npm run prepare:assets && next build",
+    "content": "tsx scripts/content.ts",
+    "start": "node scripts/start.mjs",
+    "typecheck": "next typegen && tsc --noEmit",
+    "lint": "eslint app components server shared scripts tests instrumentation.ts proxy.ts next.config.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build",
+    "predev": "npm run prepare:assets",
+    "format": "prettier --write app components server shared scripts tests *.json *.ts *.mjs README.md docs",
+    "test:live": "tsx scripts/live-smoke.ts",
+    "prepare:assets": "npm run content && node scripts/copy-legacy.mjs",
+    "test:next": "node scripts/smoke-next.mjs",
+    "test:dev": "node scripts/smoke-next.mjs --dev"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.0",
+    "cheerio": "^1.2.0",
+    "ipaddr.js": "^2.2.0",
+    "lucide-react": "^0.577.0",
+    "next": "^16.3.5",
+    "pino": "^10.3.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "robots-parser": "^3.0.1",
+    "zod": "^4.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^10.10.0",
+    "prettier": "^3.9.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.70.0"
+  }
+}

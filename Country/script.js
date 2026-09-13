@@ -10,7 +10,7 @@ nextBtn.addEventListener('click', () => {
     slideNumber = (slideNumber + 1) % numberOfSlides;
     slides[slideNumber].classList.add('active');
 
-    fetchWeather(index)
+    fetchWeather(slideNumber)
 });
 
 // Slider previous button

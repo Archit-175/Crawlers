@@ -464,6 +464,7 @@
                 var img = new Image();
                 img.src = url;
                 img.onload = anImageLoadedCallback;
+                img.onerror = anImageLoadedCallback;
             }
         }
 

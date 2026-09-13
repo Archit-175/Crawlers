@@ -412,7 +412,7 @@
   </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="/country/main js.js"></script>
+    <script src="/Country/main js.js"></script>
     <script src="/loading.js"></script>
     <script src="/search-box.js"></script>
 
@@ -434,6 +434,7 @@
                 var img = new Image();
                 img.src = url;
                 img.onload = anImageLoadedCallback;
+                img.onerror = anImageLoadedCallback;
             }
         }
 

@@ -1,0 +1,25 @@
+services:
+  crawlers:
+    build: .
+    init: true
+    ports:
+      - "127.0.0.1:3001:3001"
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 3001
+      APP_ORIGIN: ${APP_ORIGIN:-http://localhost:3001}
+      CRAWL_API_KEY: ${CRAWL_API_KEY:?Set a random workspace key of at least 32 characters}
+      OPENWEATHER_API_KEY: ${OPENWEATHER_API_KEY:-}
+    volumes:
+      - crawlers-data:/app/data
+    restart: unless-stopped
+    stop_grace_period: 35s
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    mem_limit: 768m
+    cpus: 1.0
+volumes:
+  crawlers-data:

@@ -1,28 +1,17 @@
-const apiKey = '4742ff912b66de7611f55ba71a70ab5c'; // Replace with your actual API key
-
-
-
-function fetchWeather(index) {
-    const location = locations[index];
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&units=metric&appid=${apiKey}`;
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            const weatherInfo = document.querySelectorAll('.weather-info')[index];
-            weatherInfo.innerHTML = `
-                <p>Temperature: ${data.main.temp}°C</p>
-                <p>Weather: ${data.weather[0].main}</p>
-                <p>Humidity: ${data.main.humidity}%</p>
-            `;
-        })
-        .catch(error => console.error('Error fetching weather:', error));
+// Credentials stay on the server. Static-only hosting reports availability honestly.
+async function fetchWeather(index) {
+  const location = locations[index];
+  const container = document.querySelectorAll('.weather-info')[index];
+  if (!location || !container) return;
+  try {
+    const response = await fetch(`/api/weather?lat=${location.lat}&lon=${location.lon}`, { signal: AbortSignal.timeout(10000) });
+    if (!response.ok) throw new Error('Unavailable');
+    const data = await response.json();
+    container.replaceChildren(...[
+      `Temperature: ${data.main.temp}°C`,
+      `Weather: ${data.weather[0].main}`,
+      `Humidity: ${data.main.humidity}%`
+    ].map(text => { const p = document.createElement('p'); p.textContent = text; return p; }));
+  } catch { container.textContent = 'Live weather unavailable'; }
 }
-
-// Fetch weather for all locations
-locations.forEach((_, index) => fetchWeather(index));
-
-// Update weather every 10 minutes
-setInterval(() => {
-    locations.forEach((_, index) => fetchWeather(index));
-}, 300000);
+if (typeof locations !== 'undefined') locations.forEach((_, index) => fetchWeather(index));

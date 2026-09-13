@@ -1,0 +1,16 @@
+.git
+node_modules
+dist
+data
+.env
+.env.*
+.npm-cache
+test-results
+playwright-report
+.runtime
+*.log
+
+.next
+.next-test
+public/legacy
+*.tsbuildinfo

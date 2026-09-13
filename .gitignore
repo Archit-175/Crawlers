@@ -1,0 +1,16 @@
+node_modules/
+dist/
+data/
+.env
+.env.*
+!.env.example
+.npm-cache/
+test-results/
+playwright-report/
+*.log
+.runtime/
+
+.next/
+.next-test/
+public/legacy/
+*.tsbuildinfo
